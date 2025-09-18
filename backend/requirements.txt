@@ -1,0 +1,9 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+SQLAlchemy==2.0.43
+PyMySQL==1.1.2
+python-dotenv==1.1.1
+orjson==3.11.3
+ortools==9.14.6206
+pydantic==2.11.9
+anyio==4.10.0
