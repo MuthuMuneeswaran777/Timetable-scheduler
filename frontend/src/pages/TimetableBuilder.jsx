@@ -118,6 +118,22 @@ export default function TimetableBuilder() {
 		}
 	}
 
+	async function handleRegenerate() {
+		setBusy(true);
+		setError("");
+		try {
+			const result = await TimetableAPI.regenerate(selectedBatchId || 1);
+			setTimetableId(result.timetable.timetable_id);
+			const data = await TimetableAPI.get(result.timetable.timetable_id);
+			setEntries(data.entries);
+			setToast("Timetable regenerated successfully with updated constraints!");
+		} catch (e) {
+			setError("Failed to regenerate timetable");
+		} finally {
+			setBusy(false);
+		}
+	}
+
 	async function handleDrop(target) {
 		if (!dragging || !dragging.entry_id) return;
 		setBusy(true);
@@ -179,7 +195,21 @@ export default function TimetableBuilder() {
 								<option key={b.batch_id} value={b.batch_id}>{b.batch_name || `Batch ${b.batch_id}`}</option>
 							))}
 						</select>
-						<button onClick={handleGenerate} disabled={busy} className="rounded-md bg-gray-900 px-4 py-2 text-white text-sm disabled:opacity-50">{busy ? "Working…" : "Generate"}</button>
+						<button 
+							onClick={handleGenerate} 
+							disabled={busy} 
+							className="rounded-md bg-gray-900 px-4 py-2 text-white text-sm disabled:opacity-50 hover:bg-gray-800 transition-colors"
+						>
+							{busy ? "Working…" : "Generate"}
+						</button>
+						<button 
+							onClick={handleRegenerate} 
+							disabled={busy} 
+							className="rounded-md bg-indigo-600 px-4 py-2 text-white text-sm disabled:opacity-50 hover:bg-indigo-700 transition-colors"
+							title="Regenerate with updated teacher/subject constraints"
+						>
+							{busy ? "Working…" : "Regenerate"}
+						</button>
 					</div>
 				</div>
 				{(error || toast) && <p className={`text-sm mb-2 ${error ? "text-red-600" : "text-emerald-700"}`}>{error || toast}</p>}

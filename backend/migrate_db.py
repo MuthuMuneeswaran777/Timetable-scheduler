@@ -28,9 +28,28 @@ def migrate_database():
         ("timetable_entries", "is_lab_session", "BOOLEAN DEFAULT 0"),
         ("timetable_entries", "lab_session_part", "INTEGER"),
     ]
+    
+    # Create admin table if it doesn't exist
+    create_tables = [
+        ("admins", """
+            CREATE TABLE IF NOT EXISTS admins (
+                admin_id INTEGER PRIMARY KEY,
+                email VARCHAR(120) UNIQUE NOT NULL,
+                password_hash VARCHAR(255) NOT NULL,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                last_login DATETIME
+            )
+        """)
+    ]
 
     try:
         with engine.begin() as connection:
+            # Create new tables
+            for table_name, create_sql in create_tables:
+                print(f"Creating table: {table_name}")
+                connection.execute(text(create_sql))
+            
+            # Add new columns to existing tables
             for table, col, col_def in add_columns:
                 # Skip if table doesn't exist
                 if table not in inspector.get_table_names():

@@ -98,24 +98,90 @@ class TimetableScheduler:
 		subject_id = subject.subject_id
 		teacher_id = offering.teacher_id
 		
+		# Get teacher constraints
+		teacher = next((t for t in self.teachers if t.teacher_id == teacher_id), None)
+		teacher_max_per_day = teacher.max_sessions_per_day if teacher else 2
+		teacher_max_per_week = teacher.max_sessions_per_week if teacher else 10
+		
 		# Check teacher availability
 		if not self._is_teacher_available(teacher_id, day, period):
 			return False
 		
-		# Check weekly limit (max 5 sessions per week)
-		if self.subject_weekly_count.get(subject_id, 0) >= min(offering.sessions_per_week, 5):
+		# Check if teacher has reached their weekly limit for this subject
+		current_teacher_weekly_sessions = self._get_teacher_weekly_sessions(teacher_id)
+		if current_teacher_weekly_sessions >= teacher_max_per_week:
 			return False
 		
-		# Check daily limit (max 2 sessions per day)
-		if self.subject_daily_count.get((subject_id, day), 0) >= min(offering.max_sessions_per_day, 2):
+		# Check weekly limit for this subject (use user-configured sessions_per_week)
+		if self.subject_weekly_count.get(subject_id, 0) >= offering.sessions_per_week:
 			return False
 		
-		# Check half-day separation (max 1 session per half-day)
+		# Check daily limit for this subject (use user-configured max_sessions_per_day)
+		if self.subject_daily_count.get((subject_id, day), 0) >= offering.max_sessions_per_day:
+			return False
+		
+		# Check teacher's daily limit
+		current_teacher_daily_sessions = self._get_teacher_daily_sessions(teacher_id, day)
+		if current_teacher_daily_sessions >= teacher_max_per_day:
+			return False
+		
+		# Check half-day separation to avoid consecutive sessions of same subject
+		# This ensures better learning distribution and prevents subject fatigue
 		half = half_of(period)
-		if self.subject_half_daily_count.get((subject_id, day, half), 0) >= 1:
+		if offering.max_sessions_per_day <= 2:
+			# For subjects with max 2 sessions per day: max 1 per half-day (prevents consecutive)
+			if self.subject_half_daily_count.get((subject_id, day, half), 0) >= 1:
+				return False
+		else:
+			# For subjects with more sessions per day: distribute evenly across half-days
+			max_per_half = max(1, offering.max_sessions_per_day // 2)
+			if self.subject_half_daily_count.get((subject_id, day, half), 0) >= max_per_half:
+				return False
+		
+		# Prevent same subject in same period for consecutive days
+		if self._has_consecutive_day_conflict(subject_id, day, period):
 			return False
 		
 		return True
+
+	def _get_teacher_weekly_sessions(self, teacher_id: int) -> int:
+		"""Count total weekly sessions for a teacher in current grid"""
+		count = 0
+		for (day, period), entry in self.grid.items():
+			if entry and entry.get("teacher_id") == teacher_id:
+				count += 1
+		return count
+
+	def _get_teacher_daily_sessions(self, teacher_id: int, day: DayOfWeek) -> int:
+		"""Count daily sessions for a teacher on a specific day in current grid"""
+		count = 0
+		for period in PERIODS:
+			entry = self.grid.get((day, period))
+			if entry and entry.get("teacher_id") == teacher_id:
+				count += 1
+		return count
+
+	def _has_consecutive_day_conflict(self, subject_id: int, day: DayOfWeek, period: int) -> bool:
+		"""Check if subject is already scheduled in same period on consecutive days"""
+		day_index = DAYS.index(day)
+		
+		# Check previous day
+		if day_index > 0:
+			prev_day = DAYS[day_index - 1]
+			if self.grid.get((prev_day, period)) is not None:
+				prev_entry = self.grid[(prev_day, period)]
+				if prev_entry and prev_entry.get("subject_id") == subject_id:
+					return True
+		
+		# Check next day
+		if day_index < len(DAYS) - 1:
+			next_day = DAYS[day_index + 1]
+			if self.grid.get((next_day, period)) is not None:
+				next_entry = self.grid[(next_day, period)]
+				if next_entry and next_entry.get("subject_id") == subject_id:
+					return True
+		
+		return False
 
 	def _schedule_entry(self, offering: SubjectOffering, day: DayOfWeek, period: int, is_lab: bool = False, lab_part: int = None):
 		"""Schedule a single entry"""
@@ -266,27 +332,51 @@ class TimetableScheduler:
 			print(f"   💡 Consider assigning a different teacher or splitting the lab into shorter sessions")
 
 	def _fill_remaining_slots(self):
-		"""Fill remaining slots with regular subjects"""
-		# Sort offerings by priority
+		"""Fill remaining slots with regular subjects, prioritizing subjects that need more sessions"""
 		regular_offerings = [o for o in self.offerings if not o.subject.is_lab]
-		regular_offerings.sort(key=lambda x: x.priority, reverse=True)
 		
-		for day in DAYS:
-			for period in PERIODS:
-				if self.grid[(day, period)] is not None:
-					continue
-				
-				# Try to schedule a subject
-				scheduled = False
-				for offering in regular_offerings:
-					if self._can_schedule_subject(offering, day, period):
-						self._schedule_entry(offering, day, period)
-						scheduled = True
-						break
-				
-				# If no subject can be scheduled, leave it empty
-				if not scheduled:
-					continue
+		# Multiple passes to ensure all requested sessions are scheduled
+		max_passes = 3
+		for pass_num in range(max_passes):
+			print(f"   📋 Pass {pass_num + 1}: Scheduling remaining sessions...")
+			
+			# Sort offerings by how many more sessions they need (priority to under-scheduled subjects)
+			offerings_with_deficit = []
+			for offering in regular_offerings:
+				current_sessions = self.subject_weekly_count.get(offering.subject.subject_id, 0)
+				needed_sessions = offering.sessions_per_week - current_sessions
+				if needed_sessions > 0:
+					offerings_with_deficit.append((offering, needed_sessions))
+			
+			# Sort by deficit (highest deficit first), then by priority
+			offerings_with_deficit.sort(key=lambda x: (-x[1], -x[0].priority))
+			
+			scheduled_this_pass = False
+			
+			for day in DAYS:
+				for period in PERIODS:
+					if self.grid[(day, period)] is not None:
+						continue
+					
+					# Try to schedule a subject that needs more sessions
+					for offering, deficit in offerings_with_deficit:
+						if self._can_schedule_subject(offering, day, period):
+							self._schedule_entry(offering, day, period)
+							scheduled_this_pass = True
+							print(f"      ✅ Scheduled {offering.subject.subject_name} on {day.value} period {period} (needed {deficit} more sessions)")
+							break
+			
+			# If no subjects were scheduled in this pass, we're done
+			if not scheduled_this_pass:
+				break
+		
+		# Report final session counts
+		print(f"   📊 Final session counts:")
+		for offering in regular_offerings:
+			current = self.subject_weekly_count.get(offering.subject.subject_id, 0)
+			requested = offering.sessions_per_week
+			status = "✅" if current >= requested else "⚠️"
+			print(f"      {status} {offering.subject.subject_name}: {current}/{requested} sessions")
 
 	def generate(self) -> Timetable:
 		"""Generate the complete timetable"""

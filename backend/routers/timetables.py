@@ -52,6 +52,38 @@ def generate(db: Session = Depends(get_db), batch_id: int = 1):
 	return serialize(tt)
 
 
+@router.post("/regenerate/{batch_id}")
+def regenerate_timetable(batch_id: int, db: Session = Depends(get_db)):
+	"""Regenerate timetable for a batch (deletes existing and creates new)"""
+	# Delete existing timetable for this batch
+	existing_tt = db.scalars(select(Timetable).where(Timetable.batch_id == batch_id)).first()
+	if existing_tt:
+		# Delete all entries first
+		db.query(TimetableEntry).filter(TimetableEntry.timetable_id == existing_tt.timetable_id).delete()
+		# Delete the timetable
+		db.delete(existing_tt)
+		db.commit()
+	
+	# Generate new timetable
+	tt = generate_timetable(db, batch_id=batch_id)
+	return {"message": "Timetable regenerated successfully", "timetable": serialize(tt)}
+
+
+@router.delete("/{timetable_id}")
+def delete_timetable(timetable_id: int, db: Session = Depends(get_db)):
+	"""Delete a timetable and all its entries"""
+	tt = db.get(Timetable, timetable_id)
+	if not tt:
+		raise HTTPException(status_code=404, detail="Timetable not found")
+	
+	# Delete all entries first
+	db.query(TimetableEntry).filter(TimetableEntry.timetable_id == timetable_id).delete()
+	# Delete the timetable
+	db.delete(tt)
+	db.commit()
+	return {"message": "Timetable deleted successfully"}
+
+
 @router.patch("/update/{entry_id}")
 def update_entry(entry_id: int, payload: Dict[str, Any], db: Session = Depends(get_db)):
 	entry = db.get(TimetableEntry, entry_id)

@@ -15,6 +15,8 @@ export const TimetableAPI = {
 	list: () => api.get(`/timetables`).then((r) => r.data),
 	get: (id) => api.get(`/timetables/${id}`).then((r) => r.data),
 	generate: (params) => api.post(`/timetables/generate`, null, { params }).then((r) => r.data),
+	regenerate: (batchId) => api.post(`/timetables/regenerate/${batchId}`).then((r) => r.data),
+	delete: (timetableId) => api.delete(`/timetables/${timetableId}`).then((r) => r.data),
 	updateEntry: (entryId, body) => api.patch(`/timetables/update/${entryId}`, body).then((r) => r.data),
 };
 

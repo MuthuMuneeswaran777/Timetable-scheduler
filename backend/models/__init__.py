@@ -7,6 +7,7 @@ from .models import (
 	Timetable,
 	TimetableEntry,
 	DayOfWeek,
+	Admin,
 )
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
 	"Timetable",
 	"TimetableEntry",
 	"DayOfWeek",
+	"Admin",
 ]

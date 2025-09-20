@@ -100,3 +100,12 @@ class TimetableEntry(Base):
 	lab_session_part = Column(Integer, nullable=True)  # Part of lab (1, 2, or 3)
 
 	timetable = relationship("Timetable", back_populates="entries")
+
+
+class Admin(Base):
+	__tablename__ = "admins"
+	admin_id = Column(Integer, primary_key=True, index=True)
+	email = Column(String(120), unique=True, nullable=False, index=True)
+	password_hash = Column(String(255), nullable=False)
+	created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+	last_login = Column(DateTime, nullable=True)
