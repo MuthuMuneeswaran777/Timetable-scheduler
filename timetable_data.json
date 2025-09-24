@@ -1,0 +1,1334 @@
+{
+  "departments": [
+    {
+      "name": "ECE",
+      "classes": [
+        {
+          "name": "ECG01",
+          "capacity": 60
+        },
+        {
+          "name": "ECG02",
+          "capacity": 60
+        },
+        {
+          "name": "ECG03",
+          "capacity": 60
+        },
+        {
+          "name": "ECG04",
+          "capacity": 60
+        }
+      ],
+      "labs": [
+        {
+          "name": "Y1Lab",
+          "periods": 2
+        },
+        {
+          "name": "Y2Lab",
+          "periods": 2
+        },
+        {
+          "name": "Y3Lab",
+          "periods": 2
+        },
+        {
+          "name": "Y4Lab",
+          "periods": 2
+        }
+      ],
+      "years": 4,
+      "sections": [
+        {
+          "name": "A",
+          "year_student_counts": {
+            "1": 20,
+            "2": 20,
+            "3": 20,
+            "4": 20
+          }
+        }
+      ],
+      "year_subjects": {
+        "1": [
+          "Y1S1",
+          "Y1S2",
+          "Y1S3",
+          "Y1S4",
+          "Y1S5",
+          "Y1S6"
+        ],
+        "2": [
+          "Y2S1",
+          "Y2S2",
+          "Y2S3",
+          "Y2S4",
+          "Y2S5",
+          "Y2S6"
+        ],
+        "3": [
+          "Y3S1",
+          "Y3S2",
+          "Y3S3",
+          "Y3S4",
+          "Y3S5",
+          "Y3S6"
+        ],
+        "4": [
+          "Y4S1",
+          "Y4S2",
+          "Y4S3",
+          "Y4S4",
+          "Y4S5",
+          "Y4S6"
+        ]
+      },
+      "year_labs": {
+        "1": [
+          {
+            "name": "Y1Lab",
+            "periods": 2
+          }
+        ],
+        "2": [
+          {
+            "name": "Y2Lab",
+            "periods": 2
+          }
+        ],
+        "3": [
+          {
+            "name": "Y3Lab",
+            "periods": 2
+          }
+        ],
+        "4": [
+          {
+            "name": "Y4Lab",
+            "periods": 2
+          }
+        ]
+      },
+      "subjects": [
+        "Y1S1",
+        "Y1S2",
+        "Y1S3",
+        "Y1S4",
+        "Y1S5",
+        "Y1S6",
+        "Y2S1",
+        "Y2S2",
+        "Y2S3",
+        "Y2S4",
+        "Y2S5",
+        "Y2S6",
+        "Y3S1",
+        "Y3S2",
+        "Y3S3",
+        "Y3S4",
+        "Y3S5",
+        "Y3S6",
+        "Y4S1",
+        "Y4S2",
+        "Y4S3",
+        "Y4S4",
+        "Y4S5",
+        "Y4S6"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Staff1",
+      "employee_id": "S1",
+      "subjects": [
+        "Y1S1",
+        "Y2S1"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff2",
+      "employee_id": "S2",
+      "subjects": [
+        "Y1S2",
+        "Y2S2"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff3",
+      "employee_id": "S3",
+      "subjects": [
+        "Y1S3",
+        "Y2S3"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff4",
+      "employee_id": "S4",
+      "subjects": [
+        "Y1S4",
+        "Y2S4"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff5",
+      "employee_id": "S5",
+      "subjects": [
+        "Y1S5",
+        "Y2S5"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff6",
+      "employee_id": "S6",
+      "subjects": [
+        "Y1S6",
+        "Y2S6"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff7",
+      "employee_id": "S7",
+      "subjects": [
+        "Y3S1",
+        "Y4S1"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff8",
+      "employee_id": "S8",
+      "subjects": [
+        "Y3S2",
+        "Y4S2"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff9",
+      "employee_id": "S9",
+      "subjects": [
+        "Y3S3",
+        "Y4S3"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff10",
+      "employee_id": "S10",
+      "subjects": [
+        "Y3S4",
+        "Y4S4"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff11",
+      "employee_id": "S11",
+      "subjects": [
+        "Y3S5",
+        "Y4S5"
+      ],
+      "department": "ECE"
+    },
+    {
+      "name": "Staff12",
+      "employee_id": "S12",
+      "subjects": [
+        "Y3S6",
+        "Y4S6"
+      ],
+      "department": "ECE"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "roll_number": "ECE1A01",
+      "name": "Student 1",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student1@university.edu"
+    },
+    {
+      "id": 2,
+      "roll_number": "ECE1A02",
+      "name": "Student 2",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student2@university.edu"
+    },
+    {
+      "id": 3,
+      "roll_number": "ECE1A03",
+      "name": "Student 3",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student3@university.edu"
+    },
+    {
+      "id": 4,
+      "roll_number": "ECE1A04",
+      "name": "Student 4",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student4@university.edu"
+    },
+    {
+      "id": 5,
+      "roll_number": "ECE1A05",
+      "name": "Student 5",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student5@university.edu"
+    },
+    {
+      "id": 6,
+      "roll_number": "ECE1A06",
+      "name": "Student 6",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student6@university.edu"
+    },
+    {
+      "id": 7,
+      "roll_number": "ECE1A07",
+      "name": "Student 7",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student7@university.edu"
+    },
+    {
+      "id": 8,
+      "roll_number": "ECE1A08",
+      "name": "Student 8",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student8@university.edu"
+    },
+    {
+      "id": 9,
+      "roll_number": "ECE1A09",
+      "name": "Student 9",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student9@university.edu"
+    },
+    {
+      "id": 10,
+      "roll_number": "ECE1A10",
+      "name": "Student 10",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student10@university.edu"
+    },
+    {
+      "id": 11,
+      "roll_number": "ECE1A11",
+      "name": "Student 11",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student11@university.edu"
+    },
+    {
+      "id": 12,
+      "roll_number": "ECE1A12",
+      "name": "Student 12",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student12@university.edu"
+    },
+    {
+      "id": 13,
+      "roll_number": "ECE1A13",
+      "name": "Student 13",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student13@university.edu"
+    },
+    {
+      "id": 14,
+      "roll_number": "ECE1A14",
+      "name": "Student 14",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student14@university.edu"
+    },
+    {
+      "id": 15,
+      "roll_number": "ECE1A15",
+      "name": "Student 15",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student15@university.edu"
+    },
+    {
+      "id": 16,
+      "roll_number": "ECE1A16",
+      "name": "Student 16",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student16@university.edu"
+    },
+    {
+      "id": 17,
+      "roll_number": "ECE1A17",
+      "name": "Student 17",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student17@university.edu"
+    },
+    {
+      "id": 18,
+      "roll_number": "ECE1A18",
+      "name": "Student 18",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student18@university.edu"
+    },
+    {
+      "id": 19,
+      "roll_number": "ECE1A19",
+      "name": "Student 19",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student19@university.edu"
+    },
+    {
+      "id": 20,
+      "roll_number": "ECE1A20",
+      "name": "Student 20",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student20@university.edu"
+    },
+    {
+      "id": 21,
+      "roll_number": "ECE1A21",
+      "name": "Student 21",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student21@university.edu"
+    },
+    {
+      "id": 22,
+      "roll_number": "ECE1A22",
+      "name": "Student 22",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student22@university.edu"
+    },
+    {
+      "id": 23,
+      "roll_number": "ECE1A23",
+      "name": "Student 23",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student23@university.edu"
+    },
+    {
+      "id": 24,
+      "roll_number": "ECE1A24",
+      "name": "Student 24",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student24@university.edu"
+    },
+    {
+      "id": 25,
+      "roll_number": "ECE1A25",
+      "name": "Student 25",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student25@university.edu"
+    },
+    {
+      "id": 26,
+      "roll_number": "ECE1A26",
+      "name": "Student 26",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student26@university.edu"
+    },
+    {
+      "id": 27,
+      "roll_number": "ECE1A27",
+      "name": "Student 27",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student27@university.edu"
+    },
+    {
+      "id": 28,
+      "roll_number": "ECE1A28",
+      "name": "Student 28",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student28@university.edu"
+    },
+    {
+      "id": 29,
+      "roll_number": "ECE1A29",
+      "name": "Student 29",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student29@university.edu"
+    },
+    {
+      "id": 30,
+      "roll_number": "ECE1A30",
+      "name": "Student 30",
+      "department": "ECE",
+      "year": 1,
+      "section": "A",
+      "email": "student30@university.edu"
+    },
+    {
+      "id": 31,
+      "roll_number": "ECE2A01",
+      "name": "Student 31",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student31@university.edu"
+    },
+    {
+      "id": 32,
+      "roll_number": "ECE2A02",
+      "name": "Student 32",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student32@university.edu"
+    },
+    {
+      "id": 33,
+      "roll_number": "ECE2A03",
+      "name": "Student 33",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student33@university.edu"
+    },
+    {
+      "id": 34,
+      "roll_number": "ECE2A04",
+      "name": "Student 34",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student34@university.edu"
+    },
+    {
+      "id": 35,
+      "roll_number": "ECE2A05",
+      "name": "Student 35",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student35@university.edu"
+    },
+    {
+      "id": 36,
+      "roll_number": "ECE2A06",
+      "name": "Student 36",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student36@university.edu"
+    },
+    {
+      "id": 37,
+      "roll_number": "ECE2A07",
+      "name": "Student 37",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student37@university.edu"
+    },
+    {
+      "id": 38,
+      "roll_number": "ECE2A08",
+      "name": "Student 38",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student38@university.edu"
+    },
+    {
+      "id": 39,
+      "roll_number": "ECE2A09",
+      "name": "Student 39",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student39@university.edu"
+    },
+    {
+      "id": 40,
+      "roll_number": "ECE2A10",
+      "name": "Student 40",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student40@university.edu"
+    },
+    {
+      "id": 41,
+      "roll_number": "ECE2A11",
+      "name": "Student 41",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student41@university.edu"
+    },
+    {
+      "id": 42,
+      "roll_number": "ECE2A12",
+      "name": "Student 42",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student42@university.edu"
+    },
+    {
+      "id": 43,
+      "roll_number": "ECE2A13",
+      "name": "Student 43",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student43@university.edu"
+    },
+    {
+      "id": 44,
+      "roll_number": "ECE2A14",
+      "name": "Student 44",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student44@university.edu"
+    },
+    {
+      "id": 45,
+      "roll_number": "ECE2A15",
+      "name": "Student 45",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student45@university.edu"
+    },
+    {
+      "id": 46,
+      "roll_number": "ECE2A16",
+      "name": "Student 46",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student46@university.edu"
+    },
+    {
+      "id": 47,
+      "roll_number": "ECE2A17",
+      "name": "Student 47",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student47@university.edu"
+    },
+    {
+      "id": 48,
+      "roll_number": "ECE2A18",
+      "name": "Student 48",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student48@university.edu"
+    },
+    {
+      "id": 49,
+      "roll_number": "ECE2A19",
+      "name": "Student 49",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student49@university.edu"
+    },
+    {
+      "id": 50,
+      "roll_number": "ECE2A20",
+      "name": "Student 50",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student50@university.edu"
+    },
+    {
+      "id": 51,
+      "roll_number": "ECE2A21",
+      "name": "Student 51",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student51@university.edu"
+    },
+    {
+      "id": 52,
+      "roll_number": "ECE2A22",
+      "name": "Student 52",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student52@university.edu"
+    },
+    {
+      "id": 53,
+      "roll_number": "ECE2A23",
+      "name": "Student 53",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student53@university.edu"
+    },
+    {
+      "id": 54,
+      "roll_number": "ECE2A24",
+      "name": "Student 54",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student54@university.edu"
+    },
+    {
+      "id": 55,
+      "roll_number": "ECE2A25",
+      "name": "Student 55",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student55@university.edu"
+    },
+    {
+      "id": 56,
+      "roll_number": "ECE2A26",
+      "name": "Student 56",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student56@university.edu"
+    },
+    {
+      "id": 57,
+      "roll_number": "ECE2A27",
+      "name": "Student 57",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student57@university.edu"
+    },
+    {
+      "id": 58,
+      "roll_number": "ECE2A28",
+      "name": "Student 58",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student58@university.edu"
+    },
+    {
+      "id": 59,
+      "roll_number": "ECE2A29",
+      "name": "Student 59",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student59@university.edu"
+    },
+    {
+      "id": 60,
+      "roll_number": "ECE2A30",
+      "name": "Student 60",
+      "department": "ECE",
+      "year": 2,
+      "section": "A",
+      "email": "student60@university.edu"
+    },
+    {
+      "id": 61,
+      "roll_number": "ECE3A01",
+      "name": "Student 61",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student61@university.edu"
+    },
+    {
+      "id": 62,
+      "roll_number": "ECE3A02",
+      "name": "Student 62",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student62@university.edu"
+    },
+    {
+      "id": 63,
+      "roll_number": "ECE3A03",
+      "name": "Student 63",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student63@university.edu"
+    },
+    {
+      "id": 64,
+      "roll_number": "ECE3A04",
+      "name": "Student 64",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student64@university.edu"
+    },
+    {
+      "id": 65,
+      "roll_number": "ECE3A05",
+      "name": "Student 65",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student65@university.edu"
+    },
+    {
+      "id": 66,
+      "roll_number": "ECE3A06",
+      "name": "Student 66",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student66@university.edu"
+    },
+    {
+      "id": 67,
+      "roll_number": "ECE3A07",
+      "name": "Student 67",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student67@university.edu"
+    },
+    {
+      "id": 68,
+      "roll_number": "ECE3A08",
+      "name": "Student 68",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student68@university.edu"
+    },
+    {
+      "id": 69,
+      "roll_number": "ECE3A09",
+      "name": "Student 69",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student69@university.edu"
+    },
+    {
+      "id": 70,
+      "roll_number": "ECE3A10",
+      "name": "Student 70",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student70@university.edu"
+    },
+    {
+      "id": 71,
+      "roll_number": "ECE3A11",
+      "name": "Student 71",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student71@university.edu"
+    },
+    {
+      "id": 72,
+      "roll_number": "ECE3A12",
+      "name": "Student 72",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student72@university.edu"
+    },
+    {
+      "id": 73,
+      "roll_number": "ECE3A13",
+      "name": "Student 73",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student73@university.edu"
+    },
+    {
+      "id": 74,
+      "roll_number": "ECE3A14",
+      "name": "Student 74",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student74@university.edu"
+    },
+    {
+      "id": 75,
+      "roll_number": "ECE3A15",
+      "name": "Student 75",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student75@university.edu"
+    },
+    {
+      "id": 76,
+      "roll_number": "ECE3A16",
+      "name": "Student 76",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student76@university.edu"
+    },
+    {
+      "id": 77,
+      "roll_number": "ECE3A17",
+      "name": "Student 77",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student77@university.edu"
+    },
+    {
+      "id": 78,
+      "roll_number": "ECE3A18",
+      "name": "Student 78",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student78@university.edu"
+    },
+    {
+      "id": 79,
+      "roll_number": "ECE3A19",
+      "name": "Student 79",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student79@university.edu"
+    },
+    {
+      "id": 80,
+      "roll_number": "ECE3A20",
+      "name": "Student 80",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student80@university.edu"
+    },
+    {
+      "id": 81,
+      "roll_number": "ECE3A21",
+      "name": "Student 81",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student81@university.edu"
+    },
+    {
+      "id": 82,
+      "roll_number": "ECE3A22",
+      "name": "Student 82",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student82@university.edu"
+    },
+    {
+      "id": 83,
+      "roll_number": "ECE3A23",
+      "name": "Student 83",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student83@university.edu"
+    },
+    {
+      "id": 84,
+      "roll_number": "ECE3A24",
+      "name": "Student 84",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student84@university.edu"
+    },
+    {
+      "id": 85,
+      "roll_number": "ECE3A25",
+      "name": "Student 85",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student85@university.edu"
+    },
+    {
+      "id": 86,
+      "roll_number": "ECE3A26",
+      "name": "Student 86",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student86@university.edu"
+    },
+    {
+      "id": 87,
+      "roll_number": "ECE3A27",
+      "name": "Student 87",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student87@university.edu"
+    },
+    {
+      "id": 88,
+      "roll_number": "ECE3A28",
+      "name": "Student 88",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student88@university.edu"
+    },
+    {
+      "id": 89,
+      "roll_number": "ECE3A29",
+      "name": "Student 89",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student89@university.edu"
+    },
+    {
+      "id": 90,
+      "roll_number": "ECE3A30",
+      "name": "Student 90",
+      "department": "ECE",
+      "year": 3,
+      "section": "A",
+      "email": "student90@university.edu"
+    },
+    {
+      "id": 91,
+      "roll_number": "ECE4A01",
+      "name": "Student 91",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student91@university.edu"
+    },
+    {
+      "id": 92,
+      "roll_number": "ECE4A02",
+      "name": "Student 92",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student92@university.edu"
+    },
+    {
+      "id": 93,
+      "roll_number": "ECE4A03",
+      "name": "Student 93",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student93@university.edu"
+    },
+    {
+      "id": 94,
+      "roll_number": "ECE4A04",
+      "name": "Student 94",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student94@university.edu"
+    },
+    {
+      "id": 95,
+      "roll_number": "ECE4A05",
+      "name": "Student 95",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student95@university.edu"
+    },
+    {
+      "id": 96,
+      "roll_number": "ECE4A06",
+      "name": "Student 96",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student96@university.edu"
+    },
+    {
+      "id": 97,
+      "roll_number": "ECE4A07",
+      "name": "Student 97",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student97@university.edu"
+    },
+    {
+      "id": 98,
+      "roll_number": "ECE4A08",
+      "name": "Student 98",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student98@university.edu"
+    },
+    {
+      "id": 99,
+      "roll_number": "ECE4A09",
+      "name": "Student 99",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student99@university.edu"
+    },
+    {
+      "id": 100,
+      "roll_number": "ECE4A10",
+      "name": "Student 100",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student100@university.edu"
+    },
+    {
+      "id": 101,
+      "roll_number": "ECE4A11",
+      "name": "Student 101",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student101@university.edu"
+    },
+    {
+      "id": 102,
+      "roll_number": "ECE4A12",
+      "name": "Student 102",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student102@university.edu"
+    },
+    {
+      "id": 103,
+      "roll_number": "ECE4A13",
+      "name": "Student 103",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student103@university.edu"
+    },
+    {
+      "id": 104,
+      "roll_number": "ECE4A14",
+      "name": "Student 104",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student104@university.edu"
+    },
+    {
+      "id": 105,
+      "roll_number": "ECE4A15",
+      "name": "Student 105",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student105@university.edu"
+    },
+    {
+      "id": 106,
+      "roll_number": "ECE4A16",
+      "name": "Student 106",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student106@university.edu"
+    },
+    {
+      "id": 107,
+      "roll_number": "ECE4A17",
+      "name": "Student 107",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student107@university.edu"
+    },
+    {
+      "id": 108,
+      "roll_number": "ECE4A18",
+      "name": "Student 108",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student108@university.edu"
+    },
+    {
+      "id": 109,
+      "roll_number": "ECE4A19",
+      "name": "Student 109",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student109@university.edu"
+    },
+    {
+      "id": 110,
+      "roll_number": "ECE4A20",
+      "name": "Student 110",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student110@university.edu"
+    },
+    {
+      "id": 111,
+      "roll_number": "ECE4A21",
+      "name": "Student 111",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student111@university.edu"
+    },
+    {
+      "id": 112,
+      "roll_number": "ECE4A22",
+      "name": "Student 112",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student112@university.edu"
+    },
+    {
+      "id": 113,
+      "roll_number": "ECE4A23",
+      "name": "Student 113",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student113@university.edu"
+    },
+    {
+      "id": 114,
+      "roll_number": "ECE4A24",
+      "name": "Student 114",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student114@university.edu"
+    },
+    {
+      "id": 115,
+      "roll_number": "ECE4A25",
+      "name": "Student 115",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student115@university.edu"
+    },
+    {
+      "id": 116,
+      "roll_number": "ECE4A26",
+      "name": "Student 116",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student116@university.edu"
+    },
+    {
+      "id": 117,
+      "roll_number": "ECE4A27",
+      "name": "Student 117",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student117@university.edu"
+    },
+    {
+      "id": 118,
+      "roll_number": "ECE4A28",
+      "name": "Student 118",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student118@university.edu"
+    },
+    {
+      "id": 119,
+      "roll_number": "ECE4A29",
+      "name": "Student 119",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student119@university.edu"
+    },
+    {
+      "id": 120,
+      "roll_number": "ECE4A30",
+      "name": "Student 120",
+      "department": "ECE",
+      "year": 4,
+      "section": "A",
+      "email": "student120@university.edu"
+    }
+  ],
+  "timetable": []
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .loading { background-color: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <h1>Frontend API Test</h1>
+    <div id="results"></div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        const entities = ['batches', 'teachers', 'subjects', 'rooms', 'subject_offerings'];
+        
+        async function testAPI() {
+            const resultsDiv = document.getElementById('results');
+            
+            for (const entity of entities) {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'result loading';
+                resultDiv.innerHTML = `Testing ${entity}...`;
+                resultsDiv.appendChild(resultDiv);
+                
+                try {
+                    const response = await fetch(`${API_BASE}/data/${entity}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        resultDiv.className = 'result success';
+                        resultDiv.innerHTML = `✅ ${entity}: ${data.length} records loaded successfully`;
+                        
+                        if (data.length > 0) {
+                            const sample = document.createElement('pre');
+                            sample.style.fontSize = '12px';
+                            sample.style.marginTop = '5px';
+                            sample.textContent = JSON.stringify(data[0], null, 2);
+                            resultDiv.appendChild(sample);
+                        }
+                    } else {
+                        const errorText = await response.text();
+                        resultDiv.className = 'result error';
+                        resultDiv.innerHTML = `❌ ${entity}: ${response.status} - ${errorText}`;
+                    }
+                } catch (error) {
+                    resultDiv.className = 'result error';
+                    resultDiv.innerHTML = `❌ ${entity}: ${error.message}`;
+                }
+            }
+        }
+        
+        // Run test when page loads
+        testAPI();
+    </script>
+</body>
+</html>

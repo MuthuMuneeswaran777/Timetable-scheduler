@@ -4,7 +4,7 @@ import Header from "./Header.jsx";
 import AdminDashboard from "../pages/AdminDashboard.jsx";
 import TeacherManagement from "../pages/TeacherManagement.jsx";
 import TimetableBuilder from "../pages/TimetableBuilder.jsx";
-import DataManager from "../pages/DataManager.jsx";
+import EnhancedDataManager from "../pages/EnhancedDataManager.jsx";
 
 const Dashboard = () => {
   return (
@@ -14,10 +14,10 @@ const Dashboard = () => {
         <Routes>
           <Route path="/" element={<AdminDashboard />} />
           <Route path="/teachers" element={<TeacherManagement />} />
-          <Route path="/batches" element={<DataManager entity="batches" />} />
-          <Route path="/subjects" element={<DataManager entity="subjects" />} />
-          <Route path="/offerings" element={<DataManager entity="subject_offerings" />} />
-          <Route path="/rooms" element={<DataManager entity="rooms" />} />
+          <Route path="/batches" element={<EnhancedDataManager entity="batches" />} />
+          <Route path="/subjects" element={<EnhancedDataManager entity="subjects" />} />
+          <Route path="/offerings" element={<EnhancedDataManager entity="subject_offerings" />} />
+          <Route path="/rooms" element={<EnhancedDataManager entity="rooms" />} />
           <Route path="/builder" element={<TimetableBuilder />} />
         </Routes>
       </main>

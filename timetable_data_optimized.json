@@ -1,0 +1,248 @@
+{
+  "departments": [
+    {
+      "name": "Computer Science",
+      "classes": [
+        {
+          "name": "CS-Lab",
+          "capacity": 30
+        }
+      ],
+      "labs": [],
+      "years": 1,
+      "sections": [
+        {
+          "name": "A",
+          "student_count": 30
+        }
+      ],
+      "subjects": [
+        "CS101",
+        "CS102"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Prof. Smith",
+      "employee_id": "CS001",
+      "subjects": [
+        "CS101"
+      ],
+      "department": "Computer Science"
+    }
+  ],
+  "students": [
+    {
+      "name": "Student 1",
+      "roll_number": "COM1A001",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 2",
+      "roll_number": "COM1A002",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 3",
+      "roll_number": "COM1A003",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 4",
+      "roll_number": "COM1A004",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 5",
+      "roll_number": "COM1A005",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 6",
+      "roll_number": "COM1A006",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 7",
+      "roll_number": "COM1A007",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 8",
+      "roll_number": "COM1A008",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 9",
+      "roll_number": "COM1A009",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 10",
+      "roll_number": "COM1A010",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 11",
+      "roll_number": "COM1A011",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 12",
+      "roll_number": "COM1A012",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 13",
+      "roll_number": "COM1A013",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 14",
+      "roll_number": "COM1A014",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 15",
+      "roll_number": "COM1A015",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 16",
+      "roll_number": "COM1A016",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 17",
+      "roll_number": "COM1A017",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 18",
+      "roll_number": "COM1A018",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 19",
+      "roll_number": "COM1A019",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 20",
+      "roll_number": "COM1A020",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 21",
+      "roll_number": "COM1A021",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 22",
+      "roll_number": "COM1A022",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 23",
+      "roll_number": "COM1A023",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 24",
+      "roll_number": "COM1A024",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 25",
+      "roll_number": "COM1A025",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 26",
+      "roll_number": "COM1A026",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 27",
+      "roll_number": "COM1A027",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 28",
+      "roll_number": "COM1A028",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 29",
+      "roll_number": "COM1A029",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    },
+    {
+      "name": "Student 30",
+      "roll_number": "COM1A030",
+      "department": "Computer Science",
+      "year": 1,
+      "section": "A"
+    }
+  ],
+  "timetable": []
+}

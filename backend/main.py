@@ -17,14 +17,10 @@ from backend.routers.auth import router as auth_router
 
 app = FastAPI()
 
-# CORS configuration for production
-cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173")
-origins = [origin.strip() for origin in cors_origins.split(",")]
-
-# Allow frontend (React) to talk with backend (FastAPI)
+# CORS configuration - allow all origins for development
 app.add_middleware(
 	CORSMiddleware,
-	allow_origins=origins,
+	allow_origins=["*"],  # Allow all origins for development
 	allow_credentials=True,
 	allow_methods=["*"],
 	allow_headers=["*"],
@@ -42,3 +38,38 @@ def read_root():
 app.include_router(auth_router)
 app.include_router(data_router)
 app.include_router(timetables_router)
+
+@app.get("/health")
+def health_check():
+	return {"status": "healthy", "message": "Backend is running!"}
+
+@app.get("/test-rooms")
+def test_rooms():
+	"""Test endpoint to debug room issues"""
+	try:
+		import sqlite3
+		import os
+		
+		# Direct database connection
+		db_path = os.path.join(os.path.dirname(__file__), "dev.db")
+		conn = sqlite3.connect(db_path)
+		cursor = conn.cursor()
+		
+		cursor.execute("SELECT room_id, room_name, capacity, room_type, assigned_batch_id FROM rooms")
+		rows = cursor.fetchall()
+		
+		result = []
+		for row in rows:
+			result.append({
+				"room_id": row[0],
+				"room_name": row[1],
+				"capacity": row[2],
+				"room_type": row[3],
+				"assigned_batch_id": row[4]
+			})
+		
+		conn.close()
+		return {"rooms": result, "count": len(result), "method": "direct_sqlite"}
+	except Exception as e:
+		import traceback
+		return {"error": str(e), "traceback": traceback.format_exc()}

@@ -14,59 +14,94 @@ def half_of(period: int) -> str:
 	return "AM" if period <= 4 else "PM"
 
 
+def serialize(obj) -> Dict[str, Any]:
+	"""Serialize SQLAlchemy object to dictionary"""
+	data = {}
+	for col in obj.__table__.columns:
+		val = getattr(obj, col.name)
+		if hasattr(val, "value"):
+			data[col.name] = val.value
+		else:
+			data[col.name] = val
+	return data
+
+
 @router.get("")
 def list_timetables(db: Session = Depends(get_db)):
-	tts = db.scalars(select(Timetable)).all()
-	return [serialize(tt) for tt in tts]
+	try:
+		tts = db.query(Timetable).all()
+		return [serialize(tt) for tt in tts]
+	except Exception as e:
+		print(f"Error listing timetables: {e}")
+		raise HTTPException(status_code=500, detail=f"Failed to list timetables: {str(e)}")
 
 
 @router.get("/{tid}")
 def get_timetable(tid: int, db: Session = Depends(get_db)):
-	tt = db.get(Timetable, tid)
-	if not tt:
-		raise HTTPException(status_code=404, detail="Not found")
-	entries = db.scalars(select(TimetableEntry).where(TimetableEntry.timetable_id == tt.timetable_id)).all()
-	# Enrich names
-	sub_map = {s.subject_id: s.subject_name for s in db.scalars(select(Subject)).all()}
-	teacher_map = {t.teacher_id: t.teacher_name for t in db.scalars(select(Teacher)).all()}
-	room_map = {r.room_id: r.room_name for r in db.scalars(select(Room)).all()}
+	try:
+		tt = db.query(Timetable).filter(Timetable.timetable_id == tid).first()
+		if not tt:
+			raise HTTPException(status_code=404, detail="Not found")
+		entries = db.query(TimetableEntry).filter(TimetableEntry.timetable_id == tt.timetable_id).all()
+		# Enrich names
+		sub_map = {s.subject_id: s.subject_name for s in db.query(Subject).all()}
+		teacher_map = {t.teacher_id: t.teacher_name for t in db.query(Teacher).all()}
+		room_map = {r.room_id: r.room_name for r in db.query(Room).all()}
 
-	return {
-		"timetable": serialize(tt),
-		"entries": [
-			{
-				**serialize(e),
-				"subject_name": sub_map.get(e.subject_id),
-				"teacher_name": teacher_map.get(e.teacher_id),
-				"room_name": room_map.get(e.room_id),
-				"half_day": half_of(e.period_number),
-			}
-			for e in entries
-		],
-	}
+		return {
+			"timetable": serialize(tt),
+			"entries": [
+				{
+					**serialize(e),
+					"subject_name": sub_map.get(e.subject_id),
+					"teacher_name": teacher_map.get(e.teacher_id),
+					"room_name": room_map.get(e.room_id),
+					"half_day": half_of(e.period_number),
+				}
+				for e in entries
+			],
+		}
+	except Exception as e:
+		print(f"Error getting timetable {tid}: {e}")
+		raise HTTPException(status_code=500, detail=f"Failed to get timetable: {str(e)}")
 
 
 @router.post("/generate")
 def generate(db: Session = Depends(get_db), batch_id: int = 1):
-	tt = generate_timetable(db, batch_id=batch_id)
-	return serialize(tt)
+	try:
+		print(f"Generating timetable for batch_id: {batch_id}")
+		tt = generate_timetable(db, batch_id=batch_id)
+		print(f"Generated timetable: {tt.timetable_id}")
+		return serialize(tt)
+	except Exception as e:
+		print(f"Error generating timetable: {e}")
+		import traceback
+		traceback.print_exc()
+		raise HTTPException(status_code=500, detail=f"Failed to generate timetable: {str(e)}")
 
 
 @router.post("/regenerate/{batch_id}")
 def regenerate_timetable(batch_id: int, db: Session = Depends(get_db)):
 	"""Regenerate timetable for a batch (deletes existing and creates new)"""
-	# Delete existing timetable for this batch
-	existing_tt = db.scalars(select(Timetable).where(Timetable.batch_id == batch_id)).first()
-	if existing_tt:
-		# Delete all entries first
-		db.query(TimetableEntry).filter(TimetableEntry.timetable_id == existing_tt.timetable_id).delete()
-		# Delete the timetable
-		db.delete(existing_tt)
-		db.commit()
-	
-	# Generate new timetable
-	tt = generate_timetable(db, batch_id=batch_id)
-	return {"message": "Timetable regenerated successfully", "timetable": serialize(tt)}
+	try:
+		# Delete existing timetable for this batch
+		existing_tt = db.query(Timetable).filter(Timetable.batch_id == batch_id).first()
+		if existing_tt:
+			# Delete all entries first
+			db.query(TimetableEntry).filter(TimetableEntry.timetable_id == existing_tt.timetable_id).delete()
+			# Delete the timetable
+			db.delete(existing_tt)
+			db.commit()
+		
+		# Generate new timetable
+		tt = generate_timetable(db, batch_id=batch_id)
+		return {"message": "Timetable regenerated successfully", "timetable": serialize(tt)}
+	except Exception as e:
+		print(f"Error regenerating timetable: {e}")
+		import traceback
+		traceback.print_exc()
+		db.rollback()
+		raise HTTPException(status_code=500, detail=f"Failed to regenerate timetable: {str(e)}")
 
 
 @router.delete("/{timetable_id}")

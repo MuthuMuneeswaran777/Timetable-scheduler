@@ -1,0 +1,121 @@
+Smart Class Scheduler - Database Setup Guide
+==============================================
+
+PROBLEM: Backend running in DEMO MODE due to MySQL connection error
+SOLUTION: Choose one of the options below
+
+OPTION 1: Install MySQL Server (Recommended for Full Functionality)
+===================================================================
+
+Step 1: Download MySQL
+----------------------
+1. Go to: https://dev.mysql.com/downloads/mysql/
+2. Download MySQL Community Server for Windows
+3. Choose "mysql-installer-community-8.0.xx.x.msi"
+
+Step 2: Install MySQL
+--------------------
+1. Run the installer
+2. Choose "Server only" or "Developer Default"
+3. Set root password (remember this!)
+4. Complete installation
+
+Step 3: Configure Application
+----------------------------
+1. Open d:\SIH\.env file
+2. Update: DB_PASSWORD=your_mysql_root_password
+3. Save the file
+
+Step 4: Create Database
+----------------------
+1. Open MySQL Command Line Client (or MySQL Workbench)
+2. Enter your root password
+3. Run: source d:/SIH/database_schema.sql
+4. Run: source d:/SIH/sample_data.sql
+
+Step 5: Restart Backend
+----------------------
+1. Stop current backend (Ctrl+C)
+2. Run: python backend.py
+3. Should show: "✅ Database connection pool created successfully"
+
+OPTION 2: Use XAMPP (Easier Installation)
+=========================================
+
+Step 1: Download XAMPP
+---------------------
+1. Go to: https://www.apachefriends.org/download.html
+2. Download XAMPP for Windows
+3. Install XAMPP
+
+Step 2: Start MySQL
+------------------
+1. Open XAMPP Control Panel
+2. Start "MySQL" service
+3. Click "Admin" to open phpMyAdmin
+
+Step 3: Create Database
+----------------------
+1. In phpMyAdmin, click "SQL" tab
+2. Copy and paste contents of database_schema.sql
+3. Click "Go"
+4. Copy and paste contents of sample_data.sql
+5. Click "Go"
+
+Step 4: Update Configuration
+---------------------------
+1. Open d:\SIH\.env file
+2. Update: DB_PASSWORD= (leave empty for XAMPP default)
+3. Save the file
+
+OPTION 3: Continue with DEMO MODE (Current Setup)
+=================================================
+
+Pros:
+- No installation required
+- All features work
+- Perfect for testing/demonstration
+
+Cons:
+- Data is not persistent (resets on restart)
+- Cannot test real database operations
+
+Current Status:
+- Backend: ✅ Running on http://localhost:8000
+- Frontend: ✅ Running on http://localhost:3001
+- Database: ❌ Mock data only
+
+QUICK TEST COMMANDS:
+===================
+
+Test if MySQL is installed:
+> mysql --version
+
+Test if MySQL service is running:
+> sc query mysql80
+
+Check what's using port 3306 (MySQL default):
+> netstat -ano | findstr :3306
+
+TROUBLESHOOTING:
+===============
+
+Error: "Access denied for user 'root'@'localhost'"
+- Solution: Update DB_PASSWORD in .env file with correct MySQL password
+
+Error: "Can't connect to MySQL server"
+- Solution: Make sure MySQL service is running
+- Check: Services.msc → MySQL80 should be "Running"
+
+Error: "Unknown database 'smart_class_scheduler'"
+- Solution: Run the database_schema.sql script in MySQL
+
+RECOMMENDED APPROACH:
+====================
+
+For Development/Testing: Use OPTION 3 (DEMO MODE)
+For Production/Full Features: Use OPTION 1 (MySQL Server)
+For Quick Setup: Use OPTION 2 (XAMPP)
+
+Current application works perfectly in DEMO MODE!
+All features are functional with mock data.

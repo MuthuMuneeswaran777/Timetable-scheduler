@@ -1,0 +1,3662 @@
+{
+  "admin1": {
+    "id": 1,
+    "username": "admin1",
+    "email": "admin@university.edu",
+    "password_hash": "0c9a40086cc7541d15960e07ac2d5eb8:4bb3d0afe32989570f30c219752da6593223a612310153e08f49936d13986f8c",
+    "role": "admin",
+    "full_name": "S.M.Poobalan"
+  },
+  "faculty1": {
+    "id": 2,
+    "username": "faculty1",
+    "email": "faculty@university.edu",
+    "password_hash": "5d8fa47fe0babbd6a03aa11e75ec8149:1d2b8d3665547278cf39f29a2edb3a9803dd7db734bcbd5a6ca4eae260c2f68c",
+    "role": "faculty",
+    "full_name": "Prof. John Smith"
+  },
+  "student1": {
+    "id": 3,
+    "username": "student1",
+    "email": "student@university.edu",
+    "password_hash": "8c1c38291e9ab3d6cb811e4a6618bafd:0e68c091ffd03fce18638a8935667f8402f662c807149e418aa673c496e722cf",
+    "role": "student",
+    "full_name": "John Doe"
+  },
+  "S1": {
+    "id": 4,
+    "username": "S1",
+    "email": "S1@university.edu",
+    "password_hash": "74d08fb82f018fca0e1d0986e4fda445:c829048a739ebcff19fc98e226a00cc05f911865e6860c426432b9dfb3eab91c",
+    "role": "faculty",
+    "full_name": "staff1"
+  },
+  "S2": {
+    "id": 5,
+    "username": "S2",
+    "email": "S2@university.edu",
+    "password_hash": "0f3b0b0f6984ac178adfca41459d70f1:064b6c78e46e6ba1ceb22933b684d9daaa1ef579233928019a2c7f9d462dd409",
+    "role": "faculty",
+    "full_name": "staff2"
+  },
+  "S3": {
+    "id": 6,
+    "username": "S3",
+    "email": "S3@university.edu",
+    "password_hash": "5781d57766532131243aae0773ad584f:93ce2a17278975ef089677465c81a6acdc039fa3b270f129585f5226db1163d2",
+    "role": "faculty",
+    "full_name": "staff3"
+  },
+  "S4": {
+    "id": 7,
+    "username": "S4",
+    "email": "S4@university.edu",
+    "password_hash": "86cdbd6fed420e213775fbc05f0f2db4:c31e5af7e6aa7b87b86ce693bd8434ffbad5b90ac101f8fe6301088838f4028d",
+    "role": "faculty",
+    "full_name": "staff4"
+  },
+  "S5": {
+    "id": 8,
+    "username": "S5",
+    "email": "S5@university.edu",
+    "password_hash": "a097821923b9612303d2690e20a8de38:2daf330be9adaa5d18449e7ca491c5a462bfeed9feb81db66944e8aa8bbc955b",
+    "role": "faculty",
+    "full_name": "staff5"
+  },
+  "S6": {
+    "id": 9,
+    "username": "S6",
+    "email": "S6@university.edu",
+    "password_hash": "21ffa0d6e520b6dcc64af169f477ce30:4681f34eb17f8abbed7bdfd68c7a8532d49b95c194905828628aaefc4b3f615b",
+    "role": "faculty",
+    "full_name": "staff6"
+  },
+  "ECE1A001": {
+    "id": 10,
+    "username": "ECE1A001",
+    "email": "ECE1A001@university.edu",
+    "password_hash": "e6426ee5e8786a4a07aa34941ec6ec0d:3276570199f5777d692997c4b94dfb4d853fa0bd8918370eda7d4d668214e15e",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE1A002": {
+    "id": 11,
+    "username": "ECE1A002",
+    "email": "ECE1A002@university.edu",
+    "password_hash": "6bccee6cf987c6a3c572a6f1b6b1d3a0:fc6d35e0a9fa0c3c184286905f41d0082890c9638409d53a8f59bb1e2f8d9247",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE1A003": {
+    "id": 12,
+    "username": "ECE1A003",
+    "email": "ECE1A003@university.edu",
+    "password_hash": "a1d213fd235458ad3269779cecc55e16:f1da8b1ebe65518649017d847351ea3595bf9d02e86dcd6ec0ab6b9e50205595",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE1A004": {
+    "id": 13,
+    "username": "ECE1A004",
+    "email": "ECE1A004@university.edu",
+    "password_hash": "4e9147aaf55f0a11aa681bda063858ba:94269ba2237c4739ad63e2c6ec7c16451b667a36694f95fdf0a441e4021de679",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE1A005": {
+    "id": 14,
+    "username": "ECE1A005",
+    "email": "ECE1A005@university.edu",
+    "password_hash": "00f267838c822cc48d8059a013bbc885:976a6355b6435412d4f1544c5ae572e86c17a6d1efb242af29a84e215f11353c",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE1A006": {
+    "id": 15,
+    "username": "ECE1A006",
+    "email": "ECE1A006@university.edu",
+    "password_hash": "846da244f8c3410b94cce1375cc494ef:accc37434ff8896a87368127718714c676265e7df8ba7d92c31a61899035259a",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE1A007": {
+    "id": 16,
+    "username": "ECE1A007",
+    "email": "ECE1A007@university.edu",
+    "password_hash": "b9ffe6db4db358cbac402459bd827759:d36de31fdb2977d1581189f8ecd6e1062af1bd10f8070844c6ee9a9849fd5905",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE1A008": {
+    "id": 17,
+    "username": "ECE1A008",
+    "email": "ECE1A008@university.edu",
+    "password_hash": "47527a42af4470a50c361d39015af9cb:f404b98a172a9b79a683fccfb5f928de72838a6c49e36c44af1f94698319726c",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE1A009": {
+    "id": 18,
+    "username": "ECE1A009",
+    "email": "ECE1A009@university.edu",
+    "password_hash": "81fb465300b42351af675cb954feabd6:fdc39165ddc74d90b174f90d100c8a089a3c52c4d8c6e3d9eef146ced3476af4",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE1A010": {
+    "id": 19,
+    "username": "ECE1A010",
+    "email": "ECE1A010@university.edu",
+    "password_hash": "55a16906ccdf098b16fe2943718fb6ed:0d3898e8d613569e6add99e0d7e3879607a487e7c2c80f64ef1ea6c968821728",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE1A011": {
+    "id": 20,
+    "username": "ECE1A011",
+    "email": "ECE1A011@university.edu",
+    "password_hash": "dabe93b1918457ed98a2e4a79315c320:cf8b4fea8c8e2e747efe1cd9754c326541a5666611d2259f414648417c66cf03",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE1A012": {
+    "id": 21,
+    "username": "ECE1A012",
+    "email": "ECE1A012@university.edu",
+    "password_hash": "f9aca6c41d79829d758f7387978af162:6b8acea6b8e7c7c9f77f8c6dc380e6d2005b2897567642bc22e4e259b4948289",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE1A013": {
+    "id": 22,
+    "username": "ECE1A013",
+    "email": "ECE1A013@university.edu",
+    "password_hash": "a1820827d5de8bc4bcd2a5bb91d50c50:fbf7a75936a22a7a8034fcdefd69d62ea7becfe701a753ec0fd6a85c2afbcd8f",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE1A014": {
+    "id": 23,
+    "username": "ECE1A014",
+    "email": "ECE1A014@university.edu",
+    "password_hash": "89f88b78c8e9965a4b41126be9afae9f:0e63e18925b2395a8f450f6c31024dc20c4cb3041c2baa5d0190e8d33ddc4643",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE1A015": {
+    "id": 24,
+    "username": "ECE1A015",
+    "email": "ECE1A015@university.edu",
+    "password_hash": "95b2a1c28618262a4918f5d625596bbb:3cb92b04d95c6d570a836125060f73da169e50caadb8f6774f8677083cf0bf4d",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE1A016": {
+    "id": 25,
+    "username": "ECE1A016",
+    "email": "ECE1A016@university.edu",
+    "password_hash": "b7fd0dcdb632e249cf911cb7b45419de:8b9f3558563b7bd16d7b0d11ac71bed19e06031c2a5d0d31dac5e8aafada501c",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE1A017": {
+    "id": 26,
+    "username": "ECE1A017",
+    "email": "ECE1A017@university.edu",
+    "password_hash": "674ae757d2ac08f053d5ddcbad44f929:7558dcc8744d8610dea10b40a9541b851537548997cf335c7d3a4eb910d63d2b",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE1A018": {
+    "id": 27,
+    "username": "ECE1A018",
+    "email": "ECE1A018@university.edu",
+    "password_hash": "9eaeb126cfb8e6ee3beb1506113ececa:58d3e430765213120aa92fac0f47c186892a2596b7342302337785efca1c707b",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE1A019": {
+    "id": 28,
+    "username": "ECE1A019",
+    "email": "ECE1A019@university.edu",
+    "password_hash": "21dfc06c01b9f58dd267e06a003e4f97:29079c1c26517644d0a7c70349f98227d6a873de7d1c31a75f3bdd652604b34d",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE1A020": {
+    "id": 29,
+    "username": "ECE1A020",
+    "email": "ECE1A020@university.edu",
+    "password_hash": "e0025d7d81d701c202a1e06a3c24eb4a:50bac82f8b2097e22ce5b52942cd6c099cc17809a01d3f15e4bbfa708e2d44a4",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE2A001": {
+    "id": 30,
+    "username": "ECE2A001",
+    "email": "ECE2A001@university.edu",
+    "password_hash": "0814bc60c2c4c151aeedbfb590750e5e:47fa58b86171588c0b3b1da27725044c5aa7fe5a2a9d9d491c0ed0812161ae48",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE2A002": {
+    "id": 31,
+    "username": "ECE2A002",
+    "email": "ECE2A002@university.edu",
+    "password_hash": "0752ad821ff80dc2bb7405801df07f93:61ad61d8a12c05cb30cb7ea52b86f5a64c027ce2c4e058ed45d3a2acd31178b2",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE2A003": {
+    "id": 32,
+    "username": "ECE2A003",
+    "email": "ECE2A003@university.edu",
+    "password_hash": "7e6bd69f03faab1f47fe4262b9e2a2c6:283ce0bcd640dccabb18e48b637fcbc77fb17f620132015613fccd0969f38131",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE2A004": {
+    "id": 33,
+    "username": "ECE2A004",
+    "email": "ECE2A004@university.edu",
+    "password_hash": "eec868ab86d37dd26dc448aa5f45dd11:44155823c3714de0efbd570bda5a5bad99288806a4aa8a245d7d008529c7a899",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE2A005": {
+    "id": 34,
+    "username": "ECE2A005",
+    "email": "ECE2A005@university.edu",
+    "password_hash": "b9e744e8bd196b63ab94bcead5d21518:4b1b031a26633cf87cb6c347310700959101fb71ed8201f5a3cb89344009b5f6",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE2A006": {
+    "id": 35,
+    "username": "ECE2A006",
+    "email": "ECE2A006@university.edu",
+    "password_hash": "168c532bf5605b7bf05c68ed7064641d:c286b637bc536e716159bc0a4a1e0b89c52b849b2e5c1ded6fe8a6f38493dc4a",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE2A007": {
+    "id": 36,
+    "username": "ECE2A007",
+    "email": "ECE2A007@university.edu",
+    "password_hash": "bae255ee133905d605b99d346fb75ce6:4764e184a0fd03577ed08f3417e4f46a9c159ea361f627cf062d6c9563184434",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE2A008": {
+    "id": 37,
+    "username": "ECE2A008",
+    "email": "ECE2A008@university.edu",
+    "password_hash": "fedd4ab84b9e967f9f9e5787d06d3c66:536d4b1d0fd2ea517c0abe3171876caabdd673e544f801fae4d17a472060858b",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE2A009": {
+    "id": 38,
+    "username": "ECE2A009",
+    "email": "ECE2A009@university.edu",
+    "password_hash": "23bd79ddeabc46c6cce9a6aafa330f99:60f81a8c4fbc683ab10441f668bc90533ac67520a1de98600b78a54964a8c434",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE2A010": {
+    "id": 39,
+    "username": "ECE2A010",
+    "email": "ECE2A010@university.edu",
+    "password_hash": "2114d68fd2e94da4d58f374a24c21897:f1d72a6d38202e8e448b0adeeb0568bbcadc3e5ed9854733beb8aa1f8c4e2e50",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE2A011": {
+    "id": 40,
+    "username": "ECE2A011",
+    "email": "ECE2A011@university.edu",
+    "password_hash": "836dabbc55567c405399378a2764ebcf:29ba5a48ba0f56af4aeacf60a77f34060f2dbce2474b60ae6b2fc32d3c8697e2",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE2A012": {
+    "id": 41,
+    "username": "ECE2A012",
+    "email": "ECE2A012@university.edu",
+    "password_hash": "acd272093f1ce4a79ab5f0a3a3109635:bd791d8b8044e53383842d4169b42c204ebd67c5bb81196ce7a5389f24486d25",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE2A013": {
+    "id": 42,
+    "username": "ECE2A013",
+    "email": "ECE2A013@university.edu",
+    "password_hash": "eef197a90e2ed6d2f87016daa3ae1d0d:5a1e28ff91ed1050644e6adee626d6211f87cfd83637567304753f2236d19ebb",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE2A014": {
+    "id": 43,
+    "username": "ECE2A014",
+    "email": "ECE2A014@university.edu",
+    "password_hash": "5474c943821d66f204e9ea873edbf676:fbf8e80d72b015ca1a7f99bc1bef4a8f75c29789621abcd0082734ce09d5e9bb",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE2A015": {
+    "id": 44,
+    "username": "ECE2A015",
+    "email": "ECE2A015@university.edu",
+    "password_hash": "9bfa1012b4d797defa2f3a796c0a78db:0fe099c47fdfa7a4d72054fd3671e1e4c0efaca11348c953b19ed4f72fe632f4",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE2A016": {
+    "id": 45,
+    "username": "ECE2A016",
+    "email": "ECE2A016@university.edu",
+    "password_hash": "bdbbc4c50f6267368ed67d8370e726ec:5b037c582dbdcde99c2094ae4e69919624e1845a30f47e53475436bac0a6119b",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE2A017": {
+    "id": 46,
+    "username": "ECE2A017",
+    "email": "ECE2A017@university.edu",
+    "password_hash": "1b060d145e36a6f2848aeaf461cf1287:5b5ef446aae8ecd9f4349625d2832e7df776417d26aa9969f496c61cf2048c18",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE2A018": {
+    "id": 47,
+    "username": "ECE2A018",
+    "email": "ECE2A018@university.edu",
+    "password_hash": "ecd5569687bd20af6be93210255b2960:548fa4b89480800e2e8cb32c04bc7f4aecc3825374ae1059c6bf8c8ecd8c60e4",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE2A019": {
+    "id": 48,
+    "username": "ECE2A019",
+    "email": "ECE2A019@university.edu",
+    "password_hash": "95fabdcc0be3da137e28eebfc914ba26:9af8034da8a7aee0ca9211a1c839d3c3b833bae0f4102785f1d7cc861451219d",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE2A020": {
+    "id": 49,
+    "username": "ECE2A020",
+    "email": "ECE2A020@university.edu",
+    "password_hash": "df17a8e0a423bfdcc26eec9c4910c9ea:cacda19e6193f1b16098b1d71f534ba000c6180dc527b3e935dd9dda54de9c25",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE3A001": {
+    "id": 50,
+    "username": "ECE3A001",
+    "email": "ECE3A001@university.edu",
+    "password_hash": "3fe2ed11201548abc60325f1ce99e296:a13945fe3e84375ee959be88fc22f222f942a2d9b94c6c8fe0ef35ae2d2e5830",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE3A002": {
+    "id": 51,
+    "username": "ECE3A002",
+    "email": "ECE3A002@university.edu",
+    "password_hash": "71d707fa663f3e75a26f1a30cbefb5e7:3ceb65f70313614cb4fa1ecf6aeb45d08ea01d7b672fb61ceca13072a27e6d6d",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE3A003": {
+    "id": 52,
+    "username": "ECE3A003",
+    "email": "ECE3A003@university.edu",
+    "password_hash": "06e5aafe699f697556364420e8cbc696:87d026187b7373397bfc082475c7a7315cfc490071b4aeca1fe559f9cde6e929",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE3A004": {
+    "id": 53,
+    "username": "ECE3A004",
+    "email": "ECE3A004@university.edu",
+    "password_hash": "6dbdd94a57b51910812585294fad292c:64d5a40ef2e1f86d54c7cccdf3ddcf96e6ed431a18b469cf6ba3fab0f180b809",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE3A005": {
+    "id": 54,
+    "username": "ECE3A005",
+    "email": "ECE3A005@university.edu",
+    "password_hash": "9422d4177c298a85cdb4e8b4da14c909:ee38af20b8f7ad834ee8aa9e87dae582a984284e6030b7f644b12423167652df",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE3A006": {
+    "id": 55,
+    "username": "ECE3A006",
+    "email": "ECE3A006@university.edu",
+    "password_hash": "b13468049b0bcff71988836f744c492e:3a6b50901c0487e6fbf95d4b94678f34267f86a1e676004e28afaa30cbf1c3df",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE3A007": {
+    "id": 56,
+    "username": "ECE3A007",
+    "email": "ECE3A007@university.edu",
+    "password_hash": "44990b7743ee9412dff7e573ac276ea2:6cc77bf856b2a295c8ec3bf842c32da66ce9c2382f5a8bb914383fc650040442",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE3A008": {
+    "id": 57,
+    "username": "ECE3A008",
+    "email": "ECE3A008@university.edu",
+    "password_hash": "d13e541b33666e7f8bd9da12c3d59dcb:988248cd86a9d565dabdf55c92589b2a38d4a9e0dcfb174aa8bf3516d45c5b2f",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE3A009": {
+    "id": 58,
+    "username": "ECE3A009",
+    "email": "ECE3A009@university.edu",
+    "password_hash": "a341fa44a2b1c5d24a2f144e0e4657e8:d736052c2990c1bf9a7056faf37586133d100cda2cd35cf8b2b1771aefa3fffe",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE3A010": {
+    "id": 59,
+    "username": "ECE3A010",
+    "email": "ECE3A010@university.edu",
+    "password_hash": "9f190d08f8e8aebf4771560792b08e01:608b96f158d8d710e8d867ed8eed02149d7835ade2e3827f00cdca6fe44154f4",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE3A011": {
+    "id": 60,
+    "username": "ECE3A011",
+    "email": "ECE3A011@university.edu",
+    "password_hash": "68e107384a117a933ae8701c0099038b:f151f8b7a445b12e9ac9961582ea3cdd39ebadb8af20650d89527bf45fd935fd",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE3A012": {
+    "id": 61,
+    "username": "ECE3A012",
+    "email": "ECE3A012@university.edu",
+    "password_hash": "a8196e05c663c5466d37b27b6284ed5e:8f2462876f477e4fdb369f59944d47f32c97d043f59f3532e1aa9e3d8dab117e",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE3A013": {
+    "id": 62,
+    "username": "ECE3A013",
+    "email": "ECE3A013@university.edu",
+    "password_hash": "544e04dc51fbd9e41d403244bbaa2242:1e8ea4094e26bb63a6c0422fe6bb09b546a1b2ff50b73b5b80c3287008c764ee",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE3A014": {
+    "id": 63,
+    "username": "ECE3A014",
+    "email": "ECE3A014@university.edu",
+    "password_hash": "e47dbabc508e0e366d9ecde6d605bcec:1420767cc3f1a4431e77c0fc96dd161c5943a2f5fdde21ffe4d7f771040f20bd",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE3A015": {
+    "id": 64,
+    "username": "ECE3A015",
+    "email": "ECE3A015@university.edu",
+    "password_hash": "f5c637b07f26d725e4af6272bfd58ae6:5b567e7ad44c4f05070d7713857043ca6690964fee83800487b4bd0ba5185047",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE3A016": {
+    "id": 65,
+    "username": "ECE3A016",
+    "email": "ECE3A016@university.edu",
+    "password_hash": "79d4b245e5f6765f0b2260bcf4e56851:23b0292519a02435b57cac16af6ffc626a8f130276e5bd0fa30dc53ad638901a",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE3A017": {
+    "id": 66,
+    "username": "ECE3A017",
+    "email": "ECE3A017@university.edu",
+    "password_hash": "fd3a801a406161ca9532df927eb052bd:0e19b3c7c760b69dfad737a1976ca9e62fc09099d0b4ff9ee57921bff0efb83f",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE3A018": {
+    "id": 67,
+    "username": "ECE3A018",
+    "email": "ECE3A018@university.edu",
+    "password_hash": "851329f5ad475246b90d9a70104b2a04:0cd630cf073458814b2eec0d88f6d7bb4ebf56ad2f8f5de4303b6f0b3053fbec",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE3A019": {
+    "id": 68,
+    "username": "ECE3A019",
+    "email": "ECE3A019@university.edu",
+    "password_hash": "153c0b465ec66d1f0d18b7b462de3a53:f7b8f7d36560297f06d47dc6bed893ac8feb74cbe7f3b40a4d1fa16b8efa5e36",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE3A020": {
+    "id": 69,
+    "username": "ECE3A020",
+    "email": "ECE3A020@university.edu",
+    "password_hash": "1d003a463552ddfe6f490e7782447be6:eef49af89a5ff1d236b2d3c665b2623ba94163d05f82b7d02ae5acf5daebfaf0",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE4A001": {
+    "id": 70,
+    "username": "ECE4A001",
+    "email": "ECE4A001@university.edu",
+    "password_hash": "448c7aa0b81364cd27aba255cb10b61a:39aa912fa8a123d1c808670873433130d498ecdde13b06dc4b6c5ea2be1db255",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE4A002": {
+    "id": 71,
+    "username": "ECE4A002",
+    "email": "ECE4A002@university.edu",
+    "password_hash": "c253ede5ac6ec70b7b05bbf2975343f5:b6315083e4926bc9920c51a1a335af077a31a6900471c2e4ee142d48d269cce2",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE4A003": {
+    "id": 72,
+    "username": "ECE4A003",
+    "email": "ECE4A003@university.edu",
+    "password_hash": "9f5682b5f24adcd28813bbcdc78fc629:ab7c11c0e598ec5d813c744e255a588e69152f97cc2ea4df1bcec74690fb4663",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE4A004": {
+    "id": 73,
+    "username": "ECE4A004",
+    "email": "ECE4A004@university.edu",
+    "password_hash": "909f6b96a9b00b4a2fc866019f102fef:2626cc8f27fde39668fef5f659cde33530dad3100e9f9734ea874fcece88ec73",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE4A005": {
+    "id": 74,
+    "username": "ECE4A005",
+    "email": "ECE4A005@university.edu",
+    "password_hash": "5c80188cf165a32cb49411b1ab79c803:f2e99abb5ea023fbf3c8d3fd0cb111bad063fef50f70673821e53d3f46bddc20",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE4A006": {
+    "id": 75,
+    "username": "ECE4A006",
+    "email": "ECE4A006@university.edu",
+    "password_hash": "aea729c9bf28bd655b08e95f030e0acb:4a950b32d8502562bd47ed85306fd6abd87fe4ff52b760714eb00c334fa08bee",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE4A007": {
+    "id": 76,
+    "username": "ECE4A007",
+    "email": "ECE4A007@university.edu",
+    "password_hash": "d632d515c593f00cd0e85b6e09bcade7:0fa5a51363e30af573bf9e6aa2bbaf767098c78108a8315ad34ea941753ff9d3",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE4A008": {
+    "id": 77,
+    "username": "ECE4A008",
+    "email": "ECE4A008@university.edu",
+    "password_hash": "0230872afd82e0c59d9ef898f8e3485e:3745fbdb402a8f610c9801a49c965b75d6259c2d9dc759309e913f7abe8b1798",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE4A009": {
+    "id": 78,
+    "username": "ECE4A009",
+    "email": "ECE4A009@university.edu",
+    "password_hash": "f73c136d97886410f083712413bbfc77:05f38fed98c2def05305055dbbd15939431438ea0e2f70f506044cd6be9a31dc",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE4A010": {
+    "id": 79,
+    "username": "ECE4A010",
+    "email": "ECE4A010@university.edu",
+    "password_hash": "4f71f2400f88a3b86e1828906d0cc5d6:1add50ca9e2f6b46495b2476e06c8d759e247e598729e5f7882eb271356f0989",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE4A011": {
+    "id": 80,
+    "username": "ECE4A011",
+    "email": "ECE4A011@university.edu",
+    "password_hash": "590685865607247fb74bd3e25a2cb968:131fee1367b6821c5cc3124092098ee94d9de55fbb7321fc8e3f30827e6162ef",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE4A012": {
+    "id": 81,
+    "username": "ECE4A012",
+    "email": "ECE4A012@university.edu",
+    "password_hash": "1c1dd3062f0465cf4ad52dbcd6e7cf09:6bc7370bf6d3e81a20a0459f95fe2fe2ab3176ccee7f9e0eaa7aa454e2953ee5",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE4A013": {
+    "id": 82,
+    "username": "ECE4A013",
+    "email": "ECE4A013@university.edu",
+    "password_hash": "c0125c2b13a838f23369fbf1ba04feed:c535f461431b51671b9eeded4ede75f27ad82dc2e9189b0f9577f76cbc81f658",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE4A014": {
+    "id": 83,
+    "username": "ECE4A014",
+    "email": "ECE4A014@university.edu",
+    "password_hash": "cb0a10b106c276b0a5699398a4200161:338a134788f822f77720df8ac7ed48fc49f18cf5f5210732ff9ee39861f35a6d",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE4A015": {
+    "id": 84,
+    "username": "ECE4A015",
+    "email": "ECE4A015@university.edu",
+    "password_hash": "1e693ed6f2b00e6943b548f4f4d96690:c259c7dfe986a2a205377090c9e9fb6d40cd298fed9093b06f35635fa22fd77f",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE4A016": {
+    "id": 85,
+    "username": "ECE4A016",
+    "email": "ECE4A016@university.edu",
+    "password_hash": "c22d28ce3faf863dfbe1a867c0382ab2:28d5ff6e11b6ed90d391dab4abd41265f81251512e3ffd1377a164cc9de586e3",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE4A017": {
+    "id": 86,
+    "username": "ECE4A017",
+    "email": "ECE4A017@university.edu",
+    "password_hash": "a48a7207befcf43056e694fd59d2029d:13fb24fd3c8d8acebfb84de408f38fd95d61ee9ebc35951fce652fa60b0301bf",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE4A018": {
+    "id": 87,
+    "username": "ECE4A018",
+    "email": "ECE4A018@university.edu",
+    "password_hash": "7d158cbe79903e8420486953075945f4:5a590ff9d3c08837d37fe038fe98257fbc28fa1804e46cac0a9bbf222a3acaa1",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE4A019": {
+    "id": 88,
+    "username": "ECE4A019",
+    "email": "ECE4A019@university.edu",
+    "password_hash": "f6774e7e2196036d71c499f4761fb1f0:cc0f0f3ea55df9e1a8968676698b30bb62ca301a142c3103d86c20255fef4d1b",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE4A020": {
+    "id": 89,
+    "username": "ECE4A020",
+    "email": "ECE4A020@university.edu",
+    "password_hash": "5c0e35932ef6c2a721e49997f798bbd4:598b4db431353b9c5a629a6c46f78b7273f9e0a702b9f89b87eacefaa455ca6f",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "CSE001": {
+    "id": 90,
+    "username": "CSE001",
+    "email": "CSE001@university.edu",
+    "password_hash": "86faa620284c4a644aceeab1155a4c33:925b842742fcfd3186653a84216e0dcdd5048615893c1229e487c713f5b57e6a",
+    "role": "faculty",
+    "full_name": "Dr. Sharma"
+  },
+  "CSE002": {
+    "id": 91,
+    "username": "CSE002",
+    "email": "CSE002@university.edu",
+    "password_hash": "b6f32947a78a89ddc700b0ebe05b6918:89a9c5ead8c499ceb24390eac993d7e2a120771b88caad731185dcb68d51cb87",
+    "role": "faculty",
+    "full_name": "Prof. Patel"
+  },
+  "CSE003": {
+    "id": 92,
+    "username": "CSE003",
+    "email": "CSE003@university.edu",
+    "password_hash": "214c3be00e0a6fb2854486cca951e986:661b4550ecdc6b1ed908aab99d58a25f465fdb49a13c608f1bcf0e48652d7d0c",
+    "role": "faculty",
+    "full_name": "Dr. Kumar"
+  },
+  "COM1A001": {
+    "id": 93,
+    "username": "COM1A001",
+    "email": "COM1A001@university.edu",
+    "password_hash": "78832a2ecf8b967ec840de2a3f9566e3:80e0feb221efcab595f7b1413ace83c9ae139e5c39550005a70b346b2bedb750",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "COM1A002": {
+    "id": 94,
+    "username": "COM1A002",
+    "email": "COM1A002@university.edu",
+    "password_hash": "491077c0e7015b8656095ebbfa0b283e:25a0258a7f77c3d21e18be8b723c475607905ef29cae67a4e19afd9e9e15adc5",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "COM1A003": {
+    "id": 95,
+    "username": "COM1A003",
+    "email": "COM1A003@university.edu",
+    "password_hash": "ca47a5ab1046c93174dd79a1453a497b:a03e9a72647ce91897ccf5b962a4675c1f05d8d61fe1b09e4b037c34dc56109f",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "COM1A004": {
+    "id": 96,
+    "username": "COM1A004",
+    "email": "COM1A004@university.edu",
+    "password_hash": "34a2cf5d8ab299ff35280078f2e48ed4:ca2610e88d6a7499b6c28385ccdd33f21c08a5676055cd57c842f8c9cae64108",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "COM1A005": {
+    "id": 97,
+    "username": "COM1A005",
+    "email": "COM1A005@university.edu",
+    "password_hash": "d5dd88f4f670343822c27f67e995a030:ee05e202b43db78952939874fe6ce45901e1a65740906ad777f1b08a44c3c90b",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "COM2A001": {
+    "id": 98,
+    "username": "COM2A001",
+    "email": "COM2A001@university.edu",
+    "password_hash": "f862af8d9d4d3e62b7eab876fa8a9551:931e89603ad3cf4d1c7dafb80f96c4a1f0355fd83ee18384d9148aa41677b828",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "COM2A002": {
+    "id": 99,
+    "username": "COM2A002",
+    "email": "COM2A002@university.edu",
+    "password_hash": "cf77c24e40046e7bde28ad324e6f626a:ab956c6af400cc307b566fd16e88896b4d47ab526c13bd203101b7d840f2ec64",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "COM2A003": {
+    "id": 100,
+    "username": "COM2A003",
+    "email": "COM2A003@university.edu",
+    "password_hash": "76abb74fdd7b335f0b874d200d78f086:219946685890c6c8e24aa19a57d2c15d4a73a6faa9a37ef0d99ce16d91b05a6a",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "COM2A004": {
+    "id": 101,
+    "username": "COM2A004",
+    "email": "COM2A004@university.edu",
+    "password_hash": "0b90fcc963bbd9d21bf3942fc0879a1f:a1e24180def74d12c938f7bdb9551f8c4cd259a6091aea1d4c2a051faf511b52",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "COM2A005": {
+    "id": 102,
+    "username": "COM2A005",
+    "email": "COM2A005@university.edu",
+    "password_hash": "365667d0fbe6c07f4f5a650e467649b1:6b6711ace4f93753d5dfa562eb6cb9a79c7f1680988d6ef7828dceb017035590",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "COM3A001": {
+    "id": 103,
+    "username": "COM3A001",
+    "email": "COM3A001@university.edu",
+    "password_hash": "9fc87fd5bac1627fa4e204afe7d8ca61:0ef619022d9dee2c4142bd8c4d810eadb61bb7819b30d09cd37390c35735ac44",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "COM3A002": {
+    "id": 104,
+    "username": "COM3A002",
+    "email": "COM3A002@university.edu",
+    "password_hash": "87cf26cb44f7da96bd144841bdfcd48b:6b20be5f560f1dcc3e706021b6f8e512a3c0b56121759b9196ec5c5188b843f9",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "COM3A003": {
+    "id": 105,
+    "username": "COM3A003",
+    "email": "COM3A003@university.edu",
+    "password_hash": "8ab9c703275978b53ecf2e504df1ad32:834d602bcf4eaa8d7b857da93623925da952c259b9b8f64f59740d39f73d5f10",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "COM3A004": {
+    "id": 106,
+    "username": "COM3A004",
+    "email": "COM3A004@university.edu",
+    "password_hash": "866a8d589240f4bde891df9d73a482e8:d9f7027171f8a81fa28cb2389c1d3ec6ce19a77ae4a6720885e86d7d2abe8a74",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "COM3A005": {
+    "id": 107,
+    "username": "COM3A005",
+    "email": "COM3A005@university.edu",
+    "password_hash": "0a359953c4a28b71b0ecf33cae932516:d68c27762e401f3e19b470d838812a7d2ebbaeda33a297d99716be02be3e5334",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "COM4A001": {
+    "id": 108,
+    "username": "COM4A001",
+    "email": "COM4A001@university.edu",
+    "password_hash": "7934dc864a6dcb4f6160d6a9d64cfa3d:553ac76bd9027051812021af80cc190db6af451d20e85cb3d3643339bf3fb259",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "COM4A002": {
+    "id": 109,
+    "username": "COM4A002",
+    "email": "COM4A002@university.edu",
+    "password_hash": "d2c4da64ef621f31051ec1f7aea0c30f:be945710befb1a71d37e02f9468014528839e2347d3a7b32f6cf6fb3297656bc",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "COM4A003": {
+    "id": 110,
+    "username": "COM4A003",
+    "email": "COM4A003@university.edu",
+    "password_hash": "a2c0fc5413961c5863860e11c848e649:158b9f191a5e1d3e84504237be27952f213ab4f46729dc2b1fbfefcd3193eff2",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "COM4A004": {
+    "id": 111,
+    "username": "COM4A004",
+    "email": "COM4A004@university.edu",
+    "password_hash": "dd5fd0e3570c00a2a3e3c44dd93074b5:2217c2120ac8903b11e8dd55cf5fe02576f2c43ac367f9aa9a27905f3016c797",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "COM4A005": {
+    "id": 112,
+    "username": "COM4A005",
+    "email": "COM4A005@university.edu",
+    "password_hash": "71c09046281cbebdd4cbd0a6750a9ed6:6810c451fff71a0025cdc7cdf1280e565c2ab89097d347b665e36f14a90dcd2f",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "6": {
+    "id": 113,
+    "username": "6",
+    "email": "6@university.edu",
+    "password_hash": "03040c0002f5bd236646c7e1b07c99f5:69bb2f81e5906e0bf1ff85760f7174c33e45137fe44e104b28be6b06b61c8b77",
+    "role": "faculty",
+    "full_name": "staff6"
+  },
+  "S7": {
+    "id": 114,
+    "username": "S7",
+    "email": "S7@university.edu",
+    "password_hash": "acfaa9da2f164581f772f7e909e39cba:9faba19e1baa279eb80a614f2578e891db75124c050947d51f0370177b4b639d",
+    "role": "faculty",
+    "full_name": "staff7"
+  },
+  "S8": {
+    "id": 115,
+    "username": "S8",
+    "email": "S8@university.edu",
+    "password_hash": "515e21df032a2ede0a35c52f20b87692:491cffcce2dc0a5f67fee69fc90c4f01e59765080615a57738bdeef060d6c04b",
+    "role": "faculty",
+    "full_name": "staff8"
+  },
+  "S9": {
+    "id": 116,
+    "username": "S9",
+    "email": "S9@university.edu",
+    "password_hash": "ba700589e61b1271b2010a0478eb6917:17e88515b31c700559c272030f48660bcc171f64d9ae840f498a60cf0f8d361b",
+    "role": "faculty",
+    "full_name": "staff9"
+  },
+  "S10": {
+    "id": 117,
+    "username": "S10",
+    "email": "S10@university.edu",
+    "password_hash": "2fadb97fabce18d737d7e0385f18c9c7:94e067942fb8ed2e2d01dcda70fe2443716fc23dc8233b9521b25aa8910e5bfb",
+    "role": "faculty",
+    "full_name": "staff10"
+  },
+  "S11": {
+    "id": 118,
+    "username": "S11",
+    "email": "S11@university.edu",
+    "password_hash": "d36f9a37e0975adbf3448a94a7cfd6d5:e3b3035304846dc9e07a93fefcb5a2e633173f1d1e8a4dd49008e5f10d38ecad",
+    "role": "faculty",
+    "full_name": "staff11"
+  },
+  "S12": {
+    "id": 119,
+    "username": "S12",
+    "email": "S12@university.edu",
+    "password_hash": "cde393fc106de513b86b8af0f477f3d7:307b4a26afcf6e2bf55bfc0d332449db2f6e5d1ce69140900308a67d8fa69174",
+    "role": "faculty",
+    "full_name": "staff12"
+  },
+  "ECE1B001": {
+    "id": 120,
+    "username": "ECE1B001",
+    "email": "ECE1B001@university.edu",
+    "password_hash": "919932a2be4dc1d472ab72b44cb9141b:8835929f889931aeaf5cf912bfa31d174793d984829cd311439e74fa370de0dd",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE1B002": {
+    "id": 121,
+    "username": "ECE1B002",
+    "email": "ECE1B002@university.edu",
+    "password_hash": "6f462179831f348d4c95fb03bfa0b07d:f72624295abf48833a92fc0759627d251f7250b6faf3cddb3a39ae5592fb374e",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE1B003": {
+    "id": 122,
+    "username": "ECE1B003",
+    "email": "ECE1B003@university.edu",
+    "password_hash": "d168938594c85db2d8c2c84506ed7641:b30403471a717c53929d9aaec6a420171d92dc631cfd7307d38fc69bb31c26ec",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE1B004": {
+    "id": 123,
+    "username": "ECE1B004",
+    "email": "ECE1B004@university.edu",
+    "password_hash": "26906b063f062db58731d979ea44a218:c5032148f106f5a3937b5abe7dc4dbf36be87bf88ce7f07c0afc0cafcf4d1d0b",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE1B005": {
+    "id": 124,
+    "username": "ECE1B005",
+    "email": "ECE1B005@university.edu",
+    "password_hash": "63a61acd70b6ddd2db9747d057007185:e84b29f63e38f8a23c9a4cec569fd92f0c69fadb47a118348ee879583e9302ea",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE1B006": {
+    "id": 125,
+    "username": "ECE1B006",
+    "email": "ECE1B006@university.edu",
+    "password_hash": "9d014ba7576192179bb4310ad52937a3:d90d210272cf97ae0d751aa2fedb2f385ffc507baa7f360645c1c8af5b14cf77",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE1B007": {
+    "id": 126,
+    "username": "ECE1B007",
+    "email": "ECE1B007@university.edu",
+    "password_hash": "9683e1fa0684982be7157a074542973d:653c0f7d0b230ca17993c5c4bc133577dfb8c043dfaf8b4a4d1c325fa5c9a735",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE1B008": {
+    "id": 127,
+    "username": "ECE1B008",
+    "email": "ECE1B008@university.edu",
+    "password_hash": "44a0a6982f7f1eeb1e8474cde4e6663d:a9a95a74b31af79daa706f87f9432877edb3a6c9b372db6e80a923eb87e98b5e",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE1B009": {
+    "id": 128,
+    "username": "ECE1B009",
+    "email": "ECE1B009@university.edu",
+    "password_hash": "871b2dc18ff57589865276d07d7645dc:8c7219be8b30cf5be660274f83879a74f0ae42bbf919a0c22df02cfeea1de621",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE1B010": {
+    "id": 129,
+    "username": "ECE1B010",
+    "email": "ECE1B010@university.edu",
+    "password_hash": "8f4c01019ec8f54f5d1c00921e9e5362:2e0b96b0c066e9cf49e09e9c862d142f43e37274bbe9cbd77552dca1bf2644c1",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE1B011": {
+    "id": 130,
+    "username": "ECE1B011",
+    "email": "ECE1B011@university.edu",
+    "password_hash": "b9b20f97dc7d7ab4589bc6536fa25049:002954a3e24af91ee68e162e84afab730281c59f20a2d7b387ca8220d5704a2a",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE1B012": {
+    "id": 131,
+    "username": "ECE1B012",
+    "email": "ECE1B012@university.edu",
+    "password_hash": "018023530deafdd96b73111f46ef747a:68d3290da79d2ca27e212947c3aa461c379a96167a8da54f2dd142e5e3203c79",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE1B013": {
+    "id": 132,
+    "username": "ECE1B013",
+    "email": "ECE1B013@university.edu",
+    "password_hash": "df6ecbad8edfe3388c85dc1e2417f47b:0f0effa69be2f6bcfa3d7fc19e2c4efc653240d9ae2d71a4b973d05e598d0089",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE1B014": {
+    "id": 133,
+    "username": "ECE1B014",
+    "email": "ECE1B014@university.edu",
+    "password_hash": "188f97bbdc23eec5efe7644ff372f40e:ffff9916f79ef6ca7f9f10425a4868061af49c6e6a0da526f1608ae6c3d7b38f",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE1B015": {
+    "id": 134,
+    "username": "ECE1B015",
+    "email": "ECE1B015@university.edu",
+    "password_hash": "407e9ee13fb2830267d786f628ebea02:f6a86fe5a3af9fcf366bcbeedee93092dcca6817ee84403d2aa0a6334db12dc6",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE1B016": {
+    "id": 135,
+    "username": "ECE1B016",
+    "email": "ECE1B016@university.edu",
+    "password_hash": "d9054f6a90af6cdaded179beffa7e25a:23eb0434086f58b05b76a4e05fcde1af891f774675da44ae8a021a4c54fde2e8",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE1B017": {
+    "id": 136,
+    "username": "ECE1B017",
+    "email": "ECE1B017@university.edu",
+    "password_hash": "741577dee967e82a6392a7187b44ac65:91b80a5a193f6d75456bfea75185b9a541bafd74c46c57f964a5647a63837425",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE1B018": {
+    "id": 137,
+    "username": "ECE1B018",
+    "email": "ECE1B018@university.edu",
+    "password_hash": "89f3a1a9fce87ace7d12225ad18e8a48:40c158d3e29c7cf57a622d0aef79371b962aed943780ce1da3bcec21bd9cb583",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE1B019": {
+    "id": 138,
+    "username": "ECE1B019",
+    "email": "ECE1B019@university.edu",
+    "password_hash": "11b9025e04372a62c535f672716a1eb0:edf29c0d23ba041226e8bd561bd4b08b937c040683b6d7866cadd34fc79ab364",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE1B020": {
+    "id": 139,
+    "username": "ECE1B020",
+    "email": "ECE1B020@university.edu",
+    "password_hash": "8f7f11c2cbaf5ce448d60d951a0c2db7:2c5c452801b9052125ae23c8ebd4511dd6b25646349f1f01a4351ad3620fb80b",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE1C001": {
+    "id": 140,
+    "username": "ECE1C001",
+    "email": "ECE1C001@university.edu",
+    "password_hash": "b27c74a315127a343ef1ce9f5e4468d4:51b79530beaf8f69c91c572c852a82dc963a373fb9a03d86c99dde47d9f51210",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE1C002": {
+    "id": 141,
+    "username": "ECE1C002",
+    "email": "ECE1C002@university.edu",
+    "password_hash": "e9ce3424343b7936e110114e94a0c72e:e8a1b332ce7f7dd54f5b2b91c1505de77b8f97d23ed1521fb7246a3d80090397",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE1C003": {
+    "id": 142,
+    "username": "ECE1C003",
+    "email": "ECE1C003@university.edu",
+    "password_hash": "248ff2f2dcf99e49344d5df7a995e000:2417e8cfaeb2744077d00a8560ddea7cffb39d48f9896a1a370cfe43af50277a",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE1C004": {
+    "id": 143,
+    "username": "ECE1C004",
+    "email": "ECE1C004@university.edu",
+    "password_hash": "8748ef6f5f5482052de2a1c398af0b8d:f37e9df4b6a85d158069dfc4af982352b077880930675764b73b908c91ee9217",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE1C005": {
+    "id": 144,
+    "username": "ECE1C005",
+    "email": "ECE1C005@university.edu",
+    "password_hash": "233fd89fc15b91540b37aa81e24ea47a:21e4a3c2a759449a6e63066baf8198d6949db7d3ed634b377a78d0cecd6adbe3",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE1C006": {
+    "id": 145,
+    "username": "ECE1C006",
+    "email": "ECE1C006@university.edu",
+    "password_hash": "7d2dda63aea1af2a516cc0c52b55fbe7:e533fff9d2da75c43addf5be88e1e72f2fee829745c43cb3d7d0cb842f7df05b",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE1C007": {
+    "id": 146,
+    "username": "ECE1C007",
+    "email": "ECE1C007@university.edu",
+    "password_hash": "a3e30cda71a79afde7d8972f32b86c4b:87a6a2b10e2f38c0f6592412809b17df25ddbb01d27f666be164968483670231",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE1C008": {
+    "id": 147,
+    "username": "ECE1C008",
+    "email": "ECE1C008@university.edu",
+    "password_hash": "c81953d66ebaea71b170b4ca007b0c36:8f34a79d500c21c3fd3dfe16efa88f09af6965ab6370b2d6aecc019fff079f9b",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE1C009": {
+    "id": 148,
+    "username": "ECE1C009",
+    "email": "ECE1C009@university.edu",
+    "password_hash": "1ce6ee421f5269c03c0363c8e3255ce9:faf1a95657a848cc22ca39fbd54a239e7462d62059932958f9138ea33194a07d",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE1C010": {
+    "id": 149,
+    "username": "ECE1C010",
+    "email": "ECE1C010@university.edu",
+    "password_hash": "5d60b9ba5ea87788be6a8f4693c356ce:d723d93ee95cbd3adf4c9f9c05f36e0e88f08a0452b2d08556bec1009e526f71",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE1C011": {
+    "id": 150,
+    "username": "ECE1C011",
+    "email": "ECE1C011@university.edu",
+    "password_hash": "ab2e2d56d4ab5c955aa9bbe2566ff35d:db20811bd9e9ecf25143bc8ac25c8e191c97202fd6dcd219bfc96c4ef90c217a",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE1C012": {
+    "id": 151,
+    "username": "ECE1C012",
+    "email": "ECE1C012@university.edu",
+    "password_hash": "3315f627c5a17cf08a0af4635d5d2534:187a5ac6a2ed15935a45c68665168ee30a523f144821e3b0eb5486cb64f41fc2",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE1C013": {
+    "id": 152,
+    "username": "ECE1C013",
+    "email": "ECE1C013@university.edu",
+    "password_hash": "b694c85b3b22c52b90c6cedda36610a5:5fef3db87f3db516bc84d8c7ab35d6ee0f8d590519a8848ffe1f584b9b246e64",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE1C014": {
+    "id": 153,
+    "username": "ECE1C014",
+    "email": "ECE1C014@university.edu",
+    "password_hash": "3b5ec4abea68c42cee9c95f5dd0e3ea3:eb967f9d4d1e4878ec5304896f8b2c1b3121e98fb2e346593889e9ce4ef6e351",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE1C015": {
+    "id": 154,
+    "username": "ECE1C015",
+    "email": "ECE1C015@university.edu",
+    "password_hash": "3bece8c088347829838464b61251d5fb:65d882aebf3cfe791bd9d5e4e413168ce35eac237c7d493009602e7a9ee40b24",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE1C016": {
+    "id": 155,
+    "username": "ECE1C016",
+    "email": "ECE1C016@university.edu",
+    "password_hash": "d904c5ed2d82561f4ee7257c56bdf4d6:70cb8d20edc1eeccb74cd8c0480665a8aeecb0395e2a1e3fab4353b80150c24f",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE1C017": {
+    "id": 156,
+    "username": "ECE1C017",
+    "email": "ECE1C017@university.edu",
+    "password_hash": "bcddbbeb51418150e7c753afddb0fcdb:cb1625696b424ba7d8c5b215f472e3e6257df8ee6bac51ed35457a7448d0eb3d",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE1C018": {
+    "id": 157,
+    "username": "ECE1C018",
+    "email": "ECE1C018@university.edu",
+    "password_hash": "de4f4910e0af231e7fcc0752dd8bf9a4:aa4c8759e74cb484ca22ae4948cc8e0d0c14ad677ecead098a88bc4edd949628",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE1C019": {
+    "id": 158,
+    "username": "ECE1C019",
+    "email": "ECE1C019@university.edu",
+    "password_hash": "dea6f1683ea6fbd637fa6f8a93ddac48:257113d4482fed65d6283d55696701a4deb213899d17d4ec4e47541940179f49",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE1C020": {
+    "id": 159,
+    "username": "ECE1C020",
+    "email": "ECE1C020@university.edu",
+    "password_hash": "aaaeb003e916e691dd481309bb99b896:43348bd0ec3060f35c9c52d52e7baa48c5f372584b590e8f7f686582b8cf77bd",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE2B001": {
+    "id": 160,
+    "username": "ECE2B001",
+    "email": "ECE2B001@university.edu",
+    "password_hash": "efe9fe4524be22153b43c34c36d97644:7d3dc15daf88492d3f1b372b8dc75216f5aaf318208e3282fa746e62be9d210c",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE2B002": {
+    "id": 161,
+    "username": "ECE2B002",
+    "email": "ECE2B002@university.edu",
+    "password_hash": "50450a6719e7925fb385a2d3bc45bfef:f1229fad67db23de0b5308eb8b9ad5ba788be6b00456cd6f99631f20c2f122cb",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE2B003": {
+    "id": 162,
+    "username": "ECE2B003",
+    "email": "ECE2B003@university.edu",
+    "password_hash": "c3d027247c1a7da6ef08280ad230ead6:3f2934a883b36b7fa270376609fb769e5af102dd70e5e7465769387524c7c696",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE2B004": {
+    "id": 163,
+    "username": "ECE2B004",
+    "email": "ECE2B004@university.edu",
+    "password_hash": "ae117eb4f39d8c637d6f17b1ec05de1e:101abfdd510a009c41382f1c8822056270feb194d718fe60c549a24bf5ce6a09",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE2B005": {
+    "id": 164,
+    "username": "ECE2B005",
+    "email": "ECE2B005@university.edu",
+    "password_hash": "812127d6827f47b99a048fe923eb73d3:cacafa81bb6373bed5795561b589c7260a629624765c409d3dc19bd6df245207",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE2B006": {
+    "id": 165,
+    "username": "ECE2B006",
+    "email": "ECE2B006@university.edu",
+    "password_hash": "197ad8e981b17266ef19aa188ae5b489:56ec5dc65b82895244e6f89330954ae145edc69d40b616d21a5af0f6ead6a879",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE2B007": {
+    "id": 166,
+    "username": "ECE2B007",
+    "email": "ECE2B007@university.edu",
+    "password_hash": "ffc6e4fc7400f08552e6967e0ed5c565:5dd2329e61e28a3ca556d0b9de354b3072f5ccf71e30632a219b00c21683eea4",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE2B008": {
+    "id": 167,
+    "username": "ECE2B008",
+    "email": "ECE2B008@university.edu",
+    "password_hash": "db88fea331a4e8a9680da93417c61c78:3e05830191a5b716c8849171cbb087107a621be0a1b0d37cadfc92332e99e3cd",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE2B009": {
+    "id": 168,
+    "username": "ECE2B009",
+    "email": "ECE2B009@university.edu",
+    "password_hash": "f2dd75908f2dbfd34965747a5ff4e214:5b1a6ced0a835d71b32807aa68e07602f6b449f67a8d5ba72d05e40602282b52",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE2B010": {
+    "id": 169,
+    "username": "ECE2B010",
+    "email": "ECE2B010@university.edu",
+    "password_hash": "fec3bc7942979e5c19da301746a5fbfd:1719dc30109e245827bdef5ca726e86dc717abac609c31be2f4542bdacad1ba0",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE2B011": {
+    "id": 170,
+    "username": "ECE2B011",
+    "email": "ECE2B011@university.edu",
+    "password_hash": "8fcc7d2701a18c7ebe556767710bbe01:fb2550079a5765d7ff1a79cf733010e24e35092ad992ff49c5502e50c3b09c70",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE2B012": {
+    "id": 171,
+    "username": "ECE2B012",
+    "email": "ECE2B012@university.edu",
+    "password_hash": "412d091e913839328a57900a7ce06c7c:7556cd25926424d2a85364b1378e76cd729ebe6198d7dc76ba48e83e59f90be2",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE2B013": {
+    "id": 172,
+    "username": "ECE2B013",
+    "email": "ECE2B013@university.edu",
+    "password_hash": "2f005c800da088f90044868ad2765efb:c3906a604cb6163a29788adaf15b6aaaaa782d9d9e8892de1f8728d883ac6e73",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE2B014": {
+    "id": 173,
+    "username": "ECE2B014",
+    "email": "ECE2B014@university.edu",
+    "password_hash": "3f06fd2034b08e2912ebc4c954868889:3a80da95ff0bd1a7f5faf86809ddc06377494f03f5f85b35bc8ce4e9a8c35aab",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE2B015": {
+    "id": 174,
+    "username": "ECE2B015",
+    "email": "ECE2B015@university.edu",
+    "password_hash": "b37672e2b5076af38489a98840108745:47566229a8f6c1f3e4add4ca7edfefe3c9c79961ff841796c6373760c473fa0e",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE2B016": {
+    "id": 175,
+    "username": "ECE2B016",
+    "email": "ECE2B016@university.edu",
+    "password_hash": "51e7163d4146182379d1bc4e4c8b75a4:4d5bffb02cffef02847804fdd4cc46875df2ce1f1a7516d2c22d21372f7e82c1",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE2B017": {
+    "id": 176,
+    "username": "ECE2B017",
+    "email": "ECE2B017@university.edu",
+    "password_hash": "c0dee7ce9b7225a8844e892525195932:4c1f42975733e64b46db41a10ba429e6171357551682679d21bbdbf0cd067d11",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE2B018": {
+    "id": 177,
+    "username": "ECE2B018",
+    "email": "ECE2B018@university.edu",
+    "password_hash": "2681fedcb43b72d089a64c4a0e44706c:b5d7934c4903fa0981c77fdf3b7716ba6c145a7836d076ae93d4bfd9a3ab13e0",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE2B019": {
+    "id": 178,
+    "username": "ECE2B019",
+    "email": "ECE2B019@university.edu",
+    "password_hash": "9939942285e0bbe35f4ca1d2f0ba705a:6db16ad2c1ca6229d546ac92ba7b168c6f1a364570d9664163d663b7dfc1b8ed",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE2B020": {
+    "id": 179,
+    "username": "ECE2B020",
+    "email": "ECE2B020@university.edu",
+    "password_hash": "58b64b5311ce458aeba2afc478dc49f8:43553aeb07e6e4a471e750b182cf2c825a110e55a89c9d62acd7c76cbf31ae5b",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE2C001": {
+    "id": 180,
+    "username": "ECE2C001",
+    "email": "ECE2C001@university.edu",
+    "password_hash": "e04074193358e6808472c43aa3813e7f:269d88551a1ade2dccf6f17f68957264f40a3c7443b8c6579553441eb532b494",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE2C002": {
+    "id": 181,
+    "username": "ECE2C002",
+    "email": "ECE2C002@university.edu",
+    "password_hash": "0178717e659e2ba3a04db3b8e71ba1d1:9944106e2deb6d55a8955bd741f80c3d575228310c9943a9bad6f630ff4dd7ee",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE2C003": {
+    "id": 182,
+    "username": "ECE2C003",
+    "email": "ECE2C003@university.edu",
+    "password_hash": "ada0684b18760e22ac2437517f6ab7e7:04d1683415b4415c98e3dd1cbf5b5e2c9898c49da0b1492c1a5dfe4173e7929e",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE2C004": {
+    "id": 183,
+    "username": "ECE2C004",
+    "email": "ECE2C004@university.edu",
+    "password_hash": "e5dad04eb9fda243e8831caa4520d087:7b0d185d3da50c77aad049bd9b47f2a21b48c0e57776758c0559811de745cd53",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE2C005": {
+    "id": 184,
+    "username": "ECE2C005",
+    "email": "ECE2C005@university.edu",
+    "password_hash": "cfa9f584cedfe5f08f255a2a3bd49eb9:22f60adfd93d0e5e8da4a4a449bba768ec65661da8210ffd7ba6083780f70f6c",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE2C006": {
+    "id": 185,
+    "username": "ECE2C006",
+    "email": "ECE2C006@university.edu",
+    "password_hash": "5a66d2b3af12e806b8f80f3f4522482a:12176f35d40666720f3821de2d18bddb26c1c13078ba686912fec886206ab1cb",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE2C007": {
+    "id": 186,
+    "username": "ECE2C007",
+    "email": "ECE2C007@university.edu",
+    "password_hash": "c3748360c9909074a296d217ebd89c6f:f882631122e4bbf9652d2e229f6121bdca190ad285544409df20834bdb65020f",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE2C008": {
+    "id": 187,
+    "username": "ECE2C008",
+    "email": "ECE2C008@university.edu",
+    "password_hash": "7162cd5bc4064843b4aaed24f03f679c:a2c6a09d0312d937f36c3833a4e70c6df99b44db325ba53ec487f17140a4f220",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE2C009": {
+    "id": 188,
+    "username": "ECE2C009",
+    "email": "ECE2C009@university.edu",
+    "password_hash": "fb84f3909a710aaad11a8d71a2975745:1417c54c3df667ac88cec07d39bc7d4fd1e325a2fd0f03649d50346d7812da9f",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE2C010": {
+    "id": 189,
+    "username": "ECE2C010",
+    "email": "ECE2C010@university.edu",
+    "password_hash": "b62181058256520e4cca48c0983c49c1:05bbde65087a58f5c79ad9213198864c4835bd3449fdb775dff24d332f5e220e",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE2C011": {
+    "id": 190,
+    "username": "ECE2C011",
+    "email": "ECE2C011@university.edu",
+    "password_hash": "b3d1336cd011a4705181488d8bb5b947:531754aeb742a2bb272f725865f074a68caeff401df16588be151345fb17ea01",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE2C012": {
+    "id": 191,
+    "username": "ECE2C012",
+    "email": "ECE2C012@university.edu",
+    "password_hash": "e3617e1e2ec3b8a3900685037c5aae12:ad3d360db8b6bd76874b3866e7ccb63bb4e63b0ed7021b81ca62e6bfb6b6e54a",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE2C013": {
+    "id": 192,
+    "username": "ECE2C013",
+    "email": "ECE2C013@university.edu",
+    "password_hash": "1ed35edbd4bc94da9c3355deae0cc966:44cd4f20a3c77966085188a1bcd3de6d491fa14643f71a87278930952a696bd2",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE2C014": {
+    "id": 193,
+    "username": "ECE2C014",
+    "email": "ECE2C014@university.edu",
+    "password_hash": "3441ea64bbf50491a7b65ffedeced866:01529455f4e652e400bc1135f9cdcacfbff6085d4a2cb5efdd7210df6ecc4ba1",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE2C015": {
+    "id": 194,
+    "username": "ECE2C015",
+    "email": "ECE2C015@university.edu",
+    "password_hash": "a12fae8023b43faa0310063941cd695b:7e1323b5b98eb082166326e85c61c02943bc1b2c88c233af1013b72386257044",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE2C016": {
+    "id": 195,
+    "username": "ECE2C016",
+    "email": "ECE2C016@university.edu",
+    "password_hash": "9924681fe2da98e4e0dee7ac7229720c:46f8a40acf60f919002c8791814905c7fe824d7e3d4786bcd425e68036e328cf",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE2C017": {
+    "id": 196,
+    "username": "ECE2C017",
+    "email": "ECE2C017@university.edu",
+    "password_hash": "4a23c1911c16b35e33332450f7fc94ad:abf725fd89d3142d86ee8239613332280ee5b546e3bd427b4d188edb5c79733c",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE2C018": {
+    "id": 197,
+    "username": "ECE2C018",
+    "email": "ECE2C018@university.edu",
+    "password_hash": "cf4b31c355fce049b9bf6c078916f3e4:767142af05abfe5e33895250e3fb7c04cd92d5f54f6dcdab62af4c010cbdb5a8",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE2C019": {
+    "id": 198,
+    "username": "ECE2C019",
+    "email": "ECE2C019@university.edu",
+    "password_hash": "d8a80a3691d8d0a0ae5d9a4ea3012c4d:f2d8fbfb132d05caca86036f74b8a31275178d9f6684dc7b186170e47c4e64c6",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE2C020": {
+    "id": 199,
+    "username": "ECE2C020",
+    "email": "ECE2C020@university.edu",
+    "password_hash": "80311a2d527da4f27c86760d0e697893:9139ff35a9a7b571db8121614888a015c2759b9cd76b27098d2d8afa10fb2649",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE3B001": {
+    "id": 200,
+    "username": "ECE3B001",
+    "email": "ECE3B001@university.edu",
+    "password_hash": "2e7cb59659d63cfdc34ba39224ab33f5:ab31aed0b4344cbf211fead754c9ebcd0634d19be7addf728da016b82c08228c",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE3B002": {
+    "id": 201,
+    "username": "ECE3B002",
+    "email": "ECE3B002@university.edu",
+    "password_hash": "4b24615c5cb3a56c71ba7f0c7d7cf022:3db5f7025e57e621b1870ed42fab8a7150c1ec0c7ffb5efcb052e43072606a5a",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE3B003": {
+    "id": 202,
+    "username": "ECE3B003",
+    "email": "ECE3B003@university.edu",
+    "password_hash": "7a87da277c923399ce06c0e5f77dae31:9c1dad0d55b9d2ce720871954f51beda603586530ded77533505e9764915f743",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE3B004": {
+    "id": 203,
+    "username": "ECE3B004",
+    "email": "ECE3B004@university.edu",
+    "password_hash": "7687fc6bff6c63919d6ad887da7356e6:8e4b9577c0d516d37c7306ff203054743a3de8898922ecc0cde95275cef5572b",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE3B005": {
+    "id": 204,
+    "username": "ECE3B005",
+    "email": "ECE3B005@university.edu",
+    "password_hash": "024b477bf4e201bbbc46e03b5404230b:a0af6b2b3e6a97f708c6e01bb2261b92406880177b7f96a39edeab611aceee84",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE3B006": {
+    "id": 205,
+    "username": "ECE3B006",
+    "email": "ECE3B006@university.edu",
+    "password_hash": "47b70ae91a90f0eaf02ce3d8513fc115:5087581cbee532c689e3ae2253d991f53d7162dd467f1bec2874b401b90305b0",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE3B007": {
+    "id": 206,
+    "username": "ECE3B007",
+    "email": "ECE3B007@university.edu",
+    "password_hash": "924fcd51b27f55a5223755251ccfd852:f9a409b34db6ecb86b1aedc2588e98ddb86489a269d3892e375309d442f291b6",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE3B008": {
+    "id": 207,
+    "username": "ECE3B008",
+    "email": "ECE3B008@university.edu",
+    "password_hash": "67b0dd4527c38e1e689a57ca9eb0cbcc:3be4b696cf9ada35015fbc962e243e6fd4fa46fe5f9cdba72bb16516d4e1e7c8",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE3B009": {
+    "id": 208,
+    "username": "ECE3B009",
+    "email": "ECE3B009@university.edu",
+    "password_hash": "6f6b57b6207db3875546f7013f15c5aa:08d6f277ff30921e1dde83324249e4005a6ff0f0e4e7cfd2a0fa08d357dabd76",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE3B010": {
+    "id": 209,
+    "username": "ECE3B010",
+    "email": "ECE3B010@university.edu",
+    "password_hash": "b320a31f00feafc67a77cb40a746fc77:7bb7698236a0481a580d8ab09356ccad59082bb4b9a1f3a1e35fcb6f966b4552",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE3B011": {
+    "id": 210,
+    "username": "ECE3B011",
+    "email": "ECE3B011@university.edu",
+    "password_hash": "c1531b240914e085a3898a5a8e965968:daa767a0192882902b9c9a543f262d8fd49af2eab8580aeb60f1f087902d37c7",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE3B012": {
+    "id": 211,
+    "username": "ECE3B012",
+    "email": "ECE3B012@university.edu",
+    "password_hash": "34a6b7f676fcf3ad7d2e77e53693f828:b25730541f1112d006ac39329c7d9a5decb47d181dac599bcf784c2216ce7462",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE3B013": {
+    "id": 212,
+    "username": "ECE3B013",
+    "email": "ECE3B013@university.edu",
+    "password_hash": "674e819bb2714a671abcee50a0ec74d0:7905206c045263871b347ff8c4294a137dc3c8528fe662f4ffb872824d0e4a10",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE3B014": {
+    "id": 213,
+    "username": "ECE3B014",
+    "email": "ECE3B014@university.edu",
+    "password_hash": "08e987b2b4b2a1d4893d0a41f724d66e:d3d5819c6be3c953b6c8d1f346cbd1d831436bdf3604a4e05751065d94274928",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE3B015": {
+    "id": 214,
+    "username": "ECE3B015",
+    "email": "ECE3B015@university.edu",
+    "password_hash": "0884a313a1f25a712520815522850c9d:e19e436cfd38fe6be3f6f771d4a47dc013cfaffc2fe469dd0c8241a9e24dd881",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE3B016": {
+    "id": 215,
+    "username": "ECE3B016",
+    "email": "ECE3B016@university.edu",
+    "password_hash": "d89f91ab296116aaeb31c3a45f1d5e06:04dd4620ea6ad56b9bf5d687d4fe3791accfcb981b2938a8e1654fbc6a214613",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE3B017": {
+    "id": 216,
+    "username": "ECE3B017",
+    "email": "ECE3B017@university.edu",
+    "password_hash": "d54f80c337d1995b792a411323383a72:24720104216e79b255d73f5e162d40067319f80fd2f1fd45fca20500b63cea1e",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE3B018": {
+    "id": 217,
+    "username": "ECE3B018",
+    "email": "ECE3B018@university.edu",
+    "password_hash": "6631026496f161cb1ce09ff9db11ffc3:f8ef327461699e99d997925f01ce846eb0bcfcc8eda4d6b228598d4cf5ae1424",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE3B019": {
+    "id": 218,
+    "username": "ECE3B019",
+    "email": "ECE3B019@university.edu",
+    "password_hash": "9215eb52ea96b9ca5c064a945e6139a3:213b14552c4a82b8ea7db601ee0d56447f7d98bd095cb347634555215facc22d",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE3B020": {
+    "id": 219,
+    "username": "ECE3B020",
+    "email": "ECE3B020@university.edu",
+    "password_hash": "73156919aa3043ebf3e1a7fef951a066:82b47cff6e373be3cd25113a3ad70ea5c1a80f6e733ef3bcd3f61014bde0063d",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE3C001": {
+    "id": 220,
+    "username": "ECE3C001",
+    "email": "ECE3C001@university.edu",
+    "password_hash": "a74569922dfaa5488a2b56e5b4ac793b:2ba153eb6ad9d3aa15d74de460724e35278c094a6b2ce3b7cf378035b6d67db0",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE3C002": {
+    "id": 221,
+    "username": "ECE3C002",
+    "email": "ECE3C002@university.edu",
+    "password_hash": "5da2fe4a26f068fa258b4eef1806418f:8afbce127f2084d3ce7adc845abc545bbd21eafe8dc1439c0ba066db5c71e65c",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE3C003": {
+    "id": 222,
+    "username": "ECE3C003",
+    "email": "ECE3C003@university.edu",
+    "password_hash": "7f0434c8bbdc7fff1235f3272965eae4:53df48321464dff7a8d169ffa781fc8446b6b1d9e0845ee12645e07192359edd",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE3C004": {
+    "id": 223,
+    "username": "ECE3C004",
+    "email": "ECE3C004@university.edu",
+    "password_hash": "9b496be1fabce635e08f64ae17cabdd9:44dcf7b3da028b73ebee07bcd6c108e655f6d2508148a1637a41772eeda6cde2",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE3C005": {
+    "id": 224,
+    "username": "ECE3C005",
+    "email": "ECE3C005@university.edu",
+    "password_hash": "c5a8b814e029e0cfbb4216e29b9dfa50:264c7dc4cec11e9603ed89e41b156c3aebaf74d04b283544937a50ac738ddcfb",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE3C006": {
+    "id": 225,
+    "username": "ECE3C006",
+    "email": "ECE3C006@university.edu",
+    "password_hash": "8880b69fe99e05c53e413cdcdc99176d:a14c58b3e3cd00321d11c99562a9248d67a261a0bf82206669bebb0ae58eb9a7",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE3C007": {
+    "id": 226,
+    "username": "ECE3C007",
+    "email": "ECE3C007@university.edu",
+    "password_hash": "e9b258e61af73470bde4468d6302db89:b51d7341c373765f0eb8fa97cd2db490debeb5c528ea6d505cb9cff7631e5fea",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE3C008": {
+    "id": 227,
+    "username": "ECE3C008",
+    "email": "ECE3C008@university.edu",
+    "password_hash": "7895def3358d003c8ef569ac37d10842:bfb7fea1ce40c81cfa3732944922b904af3ec123f416b636b9fc87269043a577",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE3C009": {
+    "id": 228,
+    "username": "ECE3C009",
+    "email": "ECE3C009@university.edu",
+    "password_hash": "e820af43ee89257cf6055a60f05cc576:f12562dd7d052b0242abf23315b93607b950a9f9bcd73da2ce25b10f97f631d0",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE3C010": {
+    "id": 229,
+    "username": "ECE3C010",
+    "email": "ECE3C010@university.edu",
+    "password_hash": "35272e9b309d3d287304b16c9bf07367:671eb9a774986abdfdafbabdfa3334c4d08c2a5f981f85703034be4094932562",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE3C011": {
+    "id": 230,
+    "username": "ECE3C011",
+    "email": "ECE3C011@university.edu",
+    "password_hash": "e79aabb0fa4f3a139cea6983b16f82c7:fd81a0907214b82290a0a25002159cb6c27f9bced0c2a692fe44586f7cfe2ea6",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE3C012": {
+    "id": 231,
+    "username": "ECE3C012",
+    "email": "ECE3C012@university.edu",
+    "password_hash": "a386597def9f18c44dc976f6afbc5a41:224d3f7473ba5300b4419737dfd50fdafda8c342aef034c1cc58cadd69e271dd",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE3C013": {
+    "id": 232,
+    "username": "ECE3C013",
+    "email": "ECE3C013@university.edu",
+    "password_hash": "3c8bc4801de2aeccc510c89b27679fe0:af5a38f2ecf912d65323c8a0087d5c88824e3d6012bca280ea1084d3f2499025",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE3C014": {
+    "id": 233,
+    "username": "ECE3C014",
+    "email": "ECE3C014@university.edu",
+    "password_hash": "a8534b6b32d34fe21f159dc1ad028e4d:86f76cdd7f502b1f791ae77658bb48f0d36a57cc1a9d1f92ae5c1bab3c56ef79",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE3C015": {
+    "id": 234,
+    "username": "ECE3C015",
+    "email": "ECE3C015@university.edu",
+    "password_hash": "49af9052d9099f2ac5ad1b8695560c64:d6cbda2921c6e382fd2184e8ef2671c3e3cc7331f2bf48706ab5e634422cfb82",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE3C016": {
+    "id": 235,
+    "username": "ECE3C016",
+    "email": "ECE3C016@university.edu",
+    "password_hash": "ddb53b2e4a34b907e19b053b9b7d05f8:d3dc0f74687a802c36ac786eaf391522d471f2d10c184515add9f9e0d16aed62",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE3C017": {
+    "id": 236,
+    "username": "ECE3C017",
+    "email": "ECE3C017@university.edu",
+    "password_hash": "3503cf35e0c85eedc00e787588cf3894:983d6f4c9578d1ff2a5299d9f931d77e8b685feeb7b718394f8940f5fe8221eb",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE3C018": {
+    "id": 237,
+    "username": "ECE3C018",
+    "email": "ECE3C018@university.edu",
+    "password_hash": "1900580443ceac43ab9f17168d9c5bfc:2c77c8cf37994703a1370e4e31a67f48b67ddf882fa8b76f57c68f23aa6b3060",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE3C019": {
+    "id": 238,
+    "username": "ECE3C019",
+    "email": "ECE3C019@university.edu",
+    "password_hash": "b844b355af087a799b8b198e637d0bff:9b69f1c8479d45263cd759bc7814198461b6e3183a79f8d0ed475b443b31fa94",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE3C020": {
+    "id": 239,
+    "username": "ECE3C020",
+    "email": "ECE3C020@university.edu",
+    "password_hash": "f08a6196af7af789de99a81799ad61c3:35955345c86e539ef70b74a9417540843c47e722805a25bf19b0a37ea3de9284",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE4B001": {
+    "id": 240,
+    "username": "ECE4B001",
+    "email": "ECE4B001@university.edu",
+    "password_hash": "8d4e1fa3857a5703917969908f262c3e:e4475b291e7a71b807de54cd885f61bb1877c01fd6e62f26255003c7cb4e9846",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE4B002": {
+    "id": 241,
+    "username": "ECE4B002",
+    "email": "ECE4B002@university.edu",
+    "password_hash": "7a0e837d098e6b1ff39e9a966eed2e1f:45d8bf17cc873fe13c68c962267573a8fa716b520fa190e7e21042aeab734c26",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE4B003": {
+    "id": 242,
+    "username": "ECE4B003",
+    "email": "ECE4B003@university.edu",
+    "password_hash": "26346a132ff75abc24706650d9a2b2fd:efd897f73538d4d70ddf084621831f6221c87b942664d7ca3a40d990436c7f34",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE4B004": {
+    "id": 243,
+    "username": "ECE4B004",
+    "email": "ECE4B004@university.edu",
+    "password_hash": "6295da53632480dbd575fa95c57cc83f:67cfcfddf7b730549c44fa801d9f8180088737877a3930814d312a473edb1a1d",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE4B005": {
+    "id": 244,
+    "username": "ECE4B005",
+    "email": "ECE4B005@university.edu",
+    "password_hash": "d177aa96eb43d87145ce81980a419c4c:8cd8041d53b5f96e1f6b0f5cc40757ac01f59e7a6ef3fe974bbc27733c3d3cfa",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE4B006": {
+    "id": 245,
+    "username": "ECE4B006",
+    "email": "ECE4B006@university.edu",
+    "password_hash": "614eb301c1644f49347054549a3e7896:40f3c0068f4382bfdb218c18a18acf70a9e5108dabe7a1747323a07f199d7503",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE4B007": {
+    "id": 246,
+    "username": "ECE4B007",
+    "email": "ECE4B007@university.edu",
+    "password_hash": "d6f78fda03afbb292763aafc37d49657:44d6d17478e01bc0800484f42cdec72c4097f3c546e050f1d4a2b0ff869d4edc",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE4B008": {
+    "id": 247,
+    "username": "ECE4B008",
+    "email": "ECE4B008@university.edu",
+    "password_hash": "0c04ca1253a3cc2cba2486493e3812ad:281bbef853db6248d07a94930eeb72c0d92bb91c24e37d58e1fc81d10bcfd6b1",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE4B009": {
+    "id": 248,
+    "username": "ECE4B009",
+    "email": "ECE4B009@university.edu",
+    "password_hash": "0423e373cd9387040c5f4d5e3461b77b:8f89049d348c461660e0b9f1e573b8f5e386d0c6bc4276df06ec762f8f8871e9",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE4B010": {
+    "id": 249,
+    "username": "ECE4B010",
+    "email": "ECE4B010@university.edu",
+    "password_hash": "ec04cdb8be296068c9c27ace1edbdb76:d200f0a381fb37e489ae19bcf66fcab42276f050430fa8f86f6d0385952842f8",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE4B011": {
+    "id": 250,
+    "username": "ECE4B011",
+    "email": "ECE4B011@university.edu",
+    "password_hash": "9d5885eac6d750dca8706e95c1f89db3:f67acba4708ba29853c3e0a49dfb1d2c7575c3473c38fe5fdf53ae3611a65df7",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE4B012": {
+    "id": 251,
+    "username": "ECE4B012",
+    "email": "ECE4B012@university.edu",
+    "password_hash": "f0017ca4f97f23607405bc911b2a8e8a:ea0228181bfeed7af34fb3a60bc3d188d2b8c5a5d997347307ee2c90edfb36df",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE4B013": {
+    "id": 252,
+    "username": "ECE4B013",
+    "email": "ECE4B013@university.edu",
+    "password_hash": "5fcd5924d375017b5d89549d4a328de2:b09bdd264016937751ea32f7de92e62d5d6baebe855b68b7e16cae9851930e98",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE4B014": {
+    "id": 253,
+    "username": "ECE4B014",
+    "email": "ECE4B014@university.edu",
+    "password_hash": "e3ba45d34e63ac61208ea9cae9ce6d40:210967a35b9984ef05ecd13a1f8ef1b2182299d307742c53268e4efba2900c85",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE4B015": {
+    "id": 254,
+    "username": "ECE4B015",
+    "email": "ECE4B015@university.edu",
+    "password_hash": "906656cb4723d62d2c2d1e4a387a2d34:4cd6579e0496eb9f78f8928234a881e4dc80a187aed8786a9c34f02094c7b2f4",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE4B016": {
+    "id": 255,
+    "username": "ECE4B016",
+    "email": "ECE4B016@university.edu",
+    "password_hash": "b2e131348ce6381bbc656dafb5fcc2c4:9cabc7735f5a7773fb70f6b110ea3c48d1617a89f9b22d616f3e484d113337c9",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE4B017": {
+    "id": 256,
+    "username": "ECE4B017",
+    "email": "ECE4B017@university.edu",
+    "password_hash": "87b8b32ce2640b059d74b014d421b0dc:bcdd99ed5d26486dfdfb10523c0f7216fe772545c1afd8ae9180dcac31fd3094",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE4B018": {
+    "id": 257,
+    "username": "ECE4B018",
+    "email": "ECE4B018@university.edu",
+    "password_hash": "7e5b97cab98bdcde8a4166a2fc881a7a:2ed2d42a14e02370402229ad1cc9d7738294df8e2700d096367770b17cb872c3",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE4B019": {
+    "id": 258,
+    "username": "ECE4B019",
+    "email": "ECE4B019@university.edu",
+    "password_hash": "80e2d9afc80ae9796f9c29abc8d8e2ff:759d7553e965d08c0ee2575d5c661a6d91668988305cfa6380d51eafc9bd8699",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE4B020": {
+    "id": 259,
+    "username": "ECE4B020",
+    "email": "ECE4B020@university.edu",
+    "password_hash": "4aacf6444f54977b5098e8b5093d24a7:94b555b473967555a2d468abe3a8756e25691e1a8d243f88ce2850f36ec5cf42",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "ECE4C001": {
+    "id": 260,
+    "username": "ECE4C001",
+    "email": "ECE4C001@university.edu",
+    "password_hash": "d96ad4935d9b9ba459c53ca9ca0ba003:90342b9b2194403d834b82e251e85ccd3f1b4d63985a6972d8082c55234e5438",
+    "role": "student",
+    "full_name": "Student 1"
+  },
+  "ECE4C002": {
+    "id": 261,
+    "username": "ECE4C002",
+    "email": "ECE4C002@university.edu",
+    "password_hash": "006a0d0221cdb88839514ee9931b28bf:508f6fb3f4c8eea63fb09caa4006cd6ddd7661fa8df01a076feeca730d00c2bd",
+    "role": "student",
+    "full_name": "Student 2"
+  },
+  "ECE4C003": {
+    "id": 262,
+    "username": "ECE4C003",
+    "email": "ECE4C003@university.edu",
+    "password_hash": "2c2fc2b336ec25c15935b587c56aceb4:75e90fdee589296b48e60d8bb543103a308263bf0dbd6ca2fb99c49269b1cf3f",
+    "role": "student",
+    "full_name": "Student 3"
+  },
+  "ECE4C004": {
+    "id": 263,
+    "username": "ECE4C004",
+    "email": "ECE4C004@university.edu",
+    "password_hash": "2658d17819e06b708a0edf1922727f7a:c17b13f569d397738ac8c040b1c9035e46650408a5c407e022336441a0cf40ba",
+    "role": "student",
+    "full_name": "Student 4"
+  },
+  "ECE4C005": {
+    "id": 264,
+    "username": "ECE4C005",
+    "email": "ECE4C005@university.edu",
+    "password_hash": "66627675ef6f27677fbeb9cea00bd0bd:81654e129b0ea89afb1a00fbced0f93be4cca0e1b50bf2e9d4d2c5dca00668e7",
+    "role": "student",
+    "full_name": "Student 5"
+  },
+  "ECE4C006": {
+    "id": 265,
+    "username": "ECE4C006",
+    "email": "ECE4C006@university.edu",
+    "password_hash": "63c492ff66a49b256c4ee7cef2fe2099:e78ce50d8d670c669343c0c956ce73740fd88b3745d8ebea22c26d50c327114a",
+    "role": "student",
+    "full_name": "Student 6"
+  },
+  "ECE4C007": {
+    "id": 266,
+    "username": "ECE4C007",
+    "email": "ECE4C007@university.edu",
+    "password_hash": "7ae1fe1f23f2eaf627ebe375444e3f2c:fed79c96bcb13fc764a6c1c218f97a435b04e2ba794d7f11361eaefb7f9d12dd",
+    "role": "student",
+    "full_name": "Student 7"
+  },
+  "ECE4C008": {
+    "id": 267,
+    "username": "ECE4C008",
+    "email": "ECE4C008@university.edu",
+    "password_hash": "657e05dbb9f72e36e6ca1a095e3ca6ce:673b16e0732b0dd7d81b6f6501d851feffa113a9f392c1d202504019a3ad066d",
+    "role": "student",
+    "full_name": "Student 8"
+  },
+  "ECE4C009": {
+    "id": 268,
+    "username": "ECE4C009",
+    "email": "ECE4C009@university.edu",
+    "password_hash": "1d35117e0fc41bcf824c3ed11eff9b6f:a6ecf8b05816acc363e3f5fa6269b49587972b7b743bd83a2c5d910dde208aac",
+    "role": "student",
+    "full_name": "Student 9"
+  },
+  "ECE4C010": {
+    "id": 269,
+    "username": "ECE4C010",
+    "email": "ECE4C010@university.edu",
+    "password_hash": "c0848d90db5cf15ddf41aa02d9425277:24730a951c8c77d799089f239d337b468337db438ee7cf29127e2ee31297c549",
+    "role": "student",
+    "full_name": "Student 10"
+  },
+  "ECE4C011": {
+    "id": 270,
+    "username": "ECE4C011",
+    "email": "ECE4C011@university.edu",
+    "password_hash": "a5e20e6c4a175fe980b75a2fb21b71b7:a01c0c40f875b5ee563772af6cdf1168b8298dc7820e8099b2fe481274ab4b1a",
+    "role": "student",
+    "full_name": "Student 11"
+  },
+  "ECE4C012": {
+    "id": 271,
+    "username": "ECE4C012",
+    "email": "ECE4C012@university.edu",
+    "password_hash": "837aa9f9786e1f2d359dd350fbdc4d98:fb473d5cb5c18219b9b4ac11cec395a72e3cef89db93ec45324e89fb190ae46b",
+    "role": "student",
+    "full_name": "Student 12"
+  },
+  "ECE4C013": {
+    "id": 272,
+    "username": "ECE4C013",
+    "email": "ECE4C013@university.edu",
+    "password_hash": "d33d2ade225d4ec33d2bba2bb9eb9c1a:f4014220ebbfaf380b7c915fe86a6b28602643d700e3a09b12f40189cfc0c3cf",
+    "role": "student",
+    "full_name": "Student 13"
+  },
+  "ECE4C014": {
+    "id": 273,
+    "username": "ECE4C014",
+    "email": "ECE4C014@university.edu",
+    "password_hash": "f9ded8722b5a72483d95442757438275:d2207d57cee3d068230e85b5b1725c5d8d7c48a91137d8e08a1d36f39a98cd0b",
+    "role": "student",
+    "full_name": "Student 14"
+  },
+  "ECE4C015": {
+    "id": 274,
+    "username": "ECE4C015",
+    "email": "ECE4C015@university.edu",
+    "password_hash": "1cf52840c30fed62166a3c31abb4434d:b99f67c3a7607207d03714ea3b9fe1e42807b9e2eadd00a3ec161ae90ae7d00c",
+    "role": "student",
+    "full_name": "Student 15"
+  },
+  "ECE4C016": {
+    "id": 275,
+    "username": "ECE4C016",
+    "email": "ECE4C016@university.edu",
+    "password_hash": "5b4d7618d5284e9513bb0ec7144141de:69a7e9827919306c1dc787105c5404975d1f8c81cbc7bc5cf419f5b0be5d59b1",
+    "role": "student",
+    "full_name": "Student 16"
+  },
+  "ECE4C017": {
+    "id": 276,
+    "username": "ECE4C017",
+    "email": "ECE4C017@university.edu",
+    "password_hash": "6e0c9c1831bc4f3795db3c087f2a8257:03a3bf739d44afc1624e4778211420bf3a3ca54476730f3a54909d527b36bda9",
+    "role": "student",
+    "full_name": "Student 17"
+  },
+  "ECE4C018": {
+    "id": 277,
+    "username": "ECE4C018",
+    "email": "ECE4C018@university.edu",
+    "password_hash": "278aeb7b74e07e2fecf60a749ed668d0:ce46fa9dbf35a85bc2a399bed438e3670d0839f0c458ddb5feb2ced4781040e1",
+    "role": "student",
+    "full_name": "Student 18"
+  },
+  "ECE4C019": {
+    "id": 278,
+    "username": "ECE4C019",
+    "email": "ECE4C019@university.edu",
+    "password_hash": "fac8343e3825e0f2fe156ab937b99285:3b2eae8ebce4be87f4b2d28d1a344340d1940e45256c6db2f21d9c6ff98631d3",
+    "role": "student",
+    "full_name": "Student 19"
+  },
+  "ECE4C020": {
+    "id": 279,
+    "username": "ECE4C020",
+    "email": "ECE4C020@university.edu",
+    "password_hash": "aab128c5270ee6b08074dd49be8f3532:c1705ac61138195f095320457e2032e82a1e8e758f77da58e25cd4e9d0468eaf",
+    "role": "student",
+    "full_name": "Student 20"
+  },
+  "s1": {
+    "id": 280,
+    "username": "s1",
+    "email": "s1@university.edu",
+    "password_hash": "fb3b28f76fb2ccce36aeca001d79aa5d:fc15211099841febb1efcf95170bb2b1d86527f4608b55094b78e22650682b3d",
+    "role": "faculty",
+    "full_name": "staff1",
+    "department": "ECE"
+  },
+  "s2": {
+    "id": 281,
+    "username": "s2",
+    "email": "s2@university.edu",
+    "password_hash": "81c3fda3a1fb7946a529bd0cdd0f4cb4:2b69a9623023531305cd4e6cca6f75dd17b87a3179cfa7e3d837b08c00ed66b1",
+    "role": "faculty",
+    "full_name": "staff2",
+    "department": "ECE"
+  },
+  "s3": {
+    "id": 282,
+    "username": "s3",
+    "email": "s3@university.edu",
+    "password_hash": "ef19a9727df1837b33cad5ce516d580b:bcfc7fa1a9c46a123435fc5cf5da6a715c43a71caf256bd94a8ace1dbb604f27",
+    "role": "faculty",
+    "full_name": "staff3",
+    "department": "ECE"
+  },
+  "s4": {
+    "id": 283,
+    "username": "s4",
+    "email": "s4@university.edu",
+    "password_hash": "17fc67fef900e088cbd7e38cbc777ca4:ff12e2ee3100400376756acd8cbfeee4d57adf339c9f2bf737fef395310c571d",
+    "role": "faculty",
+    "full_name": "staff4",
+    "department": "ECE"
+  },
+  "s5": {
+    "id": 284,
+    "username": "s5",
+    "email": "s5@university.edu",
+    "password_hash": "7853f2d122a06683c2a36c0d2db5d5d4:09320297e1643194b04918d18a7852352ccc9c9a66f9769561f137c7369da4d6",
+    "role": "faculty",
+    "full_name": "staff5",
+    "department": "ECE"
+  },
+  "s6": {
+    "id": 285,
+    "username": "s6",
+    "email": "s6@university.edu",
+    "password_hash": "556b40c9cb37c91591e370255b72fbd8:81c7b208f64ac511e6fe3325250aafa3a7b8a94edd233221fd495e6bf6502897",
+    "role": "faculty",
+    "full_name": "staff6",
+    "department": "ECE"
+  },
+  "s7": {
+    "id": 286,
+    "username": "s7",
+    "email": "s7@university.edu",
+    "password_hash": "e130f49d11a76db6dd6ac3abbe32a664:e3c2c989d10f41bcf11bb00d426ca66ed9bc6aa5280ed7efdc77b3b06039683c",
+    "role": "faculty",
+    "full_name": "staff7",
+    "department": "ECE"
+  },
+  "s8": {
+    "id": 287,
+    "username": "s8",
+    "email": "s8@university.edu",
+    "password_hash": "567b5369bff22e68bc18fe6c710ede86:e1016af310e69b09d9241bf44459233acac7d90c2c3dfb6ca6ae3db3f2c258ae",
+    "role": "faculty",
+    "full_name": "staff8",
+    "department": "ECE"
+  },
+  "s9": {
+    "id": 288,
+    "username": "s9",
+    "email": "s9@university.edu",
+    "password_hash": "19cc9c0e5c13d7594bab790b2af26aa0:d438cb69ebc66c8e47302affdcfaaf32bfa7ea01e8266a554b94f6a4edeaee91",
+    "role": "faculty",
+    "full_name": "staff9",
+    "department": "ECE"
+  },
+  "s10": {
+    "id": 289,
+    "username": "s10",
+    "email": "s10@university.edu",
+    "password_hash": "162bd26443d11d08a25ce937ca406974:f87ae10ec60b17759dbbfffb228e67b9b0454d7bd9ab8dcd9253c4280d3562af",
+    "role": "faculty",
+    "full_name": "staff10",
+    "department": "ECE"
+  },
+  "s11": {
+    "id": 290,
+    "username": "s11",
+    "email": "s11@university.edu",
+    "password_hash": "14b7df5d0e8382561d7b0f41e10d6c0f:3eda6756ad2cefb74fc0ef7cf9d0eca146214bfce8af265a0014a9d7cda39164",
+    "role": "faculty",
+    "full_name": "staff11",
+    "department": "ECE"
+  },
+  "s12": {
+    "id": 291,
+    "username": "s12",
+    "email": "s12@university.edu",
+    "password_hash": "46915e862199f104e5c049b873affb51:de11ea5bfbe9672c38c987611ddf505f89dec3c0a83fa113d4cf61ef67e0185c",
+    "role": "faculty",
+    "full_name": "staff12",
+    "department": "ECE"
+  },
+  "ece1a01": {
+    "id": 292,
+    "username": "ece1a01",
+    "email": "student1@university.edu",
+    "password_hash": "2271e6e121e27399adab9aea9ec629dc:7c02bbe32fbcee7d935870b19ab84ad5d2dac912fced345bf3f4653a0be03b7a",
+    "role": "student",
+    "full_name": "Student 1",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a02": {
+    "id": 293,
+    "username": "ece1a02",
+    "email": "student2@university.edu",
+    "password_hash": "3782745c6428f3297fff577331a03fda:1f5d4a1b63858dba5c2f143341367ef0d09bd35e986c6db20316bfb0d4ccd87a",
+    "role": "student",
+    "full_name": "Student 2",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a03": {
+    "id": 294,
+    "username": "ece1a03",
+    "email": "student3@university.edu",
+    "password_hash": "0e42d453bc622b8d20647653857ea893:4bb5fa2cdac5a30462766bcd06fa85d630890afdc68e2cdf34a9c41924fc5adf",
+    "role": "student",
+    "full_name": "Student 3",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a04": {
+    "id": 295,
+    "username": "ece1a04",
+    "email": "student4@university.edu",
+    "password_hash": "6681c9a09a78f2f35527414052f04ef3:32837c73b60e760f10a86e893af7fc307119233c018278ec2c99655b541bd83c",
+    "role": "student",
+    "full_name": "Student 4",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a05": {
+    "id": 296,
+    "username": "ece1a05",
+    "email": "student5@university.edu",
+    "password_hash": "4282da1d0604bd64dd743f8f4a3a70d0:dd6fa076530040c35e52881c4a11e4dfc5249854ea7810683e15602d38dbc853",
+    "role": "student",
+    "full_name": "Student 5",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a06": {
+    "id": 297,
+    "username": "ece1a06",
+    "email": "student6@university.edu",
+    "password_hash": "ae826ba737f33a8ee2a1942391153dd3:b686c20c4e53cd95fc357118c4a9f1479e34fd6ece68a2b55760557b5db621b2",
+    "role": "student",
+    "full_name": "Student 6",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a07": {
+    "id": 298,
+    "username": "ece1a07",
+    "email": "student7@university.edu",
+    "password_hash": "85fb6a89aa91af7fc8c295816e6fbf00:3da0aff9669dc162ab05b8d1b760bbf0ab47fb6af76a141780a4c5e56553efb8",
+    "role": "student",
+    "full_name": "Student 7",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a08": {
+    "id": 299,
+    "username": "ece1a08",
+    "email": "student8@university.edu",
+    "password_hash": "c43f31235ce862addd3cca5a59b03488:bb261ecf4e427792b20345e6e1be7a8aab07df3ace357ceea273955618ed0bda",
+    "role": "student",
+    "full_name": "Student 8",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a09": {
+    "id": 300,
+    "username": "ece1a09",
+    "email": "student9@university.edu",
+    "password_hash": "7b416422ff406d9819f7a7431794ffee:5ea9478595610b3124059d2a83d6727e03639e536d3e3d70aa352332000f781a",
+    "role": "student",
+    "full_name": "Student 9",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a10": {
+    "id": 301,
+    "username": "ece1a10",
+    "email": "student10@university.edu",
+    "password_hash": "7bd76264c918cec31e03d57537ec8c58:6c2a23022fdd6d13d26b844e5bfd07371df9f63edb1040babaecc7cd49009136",
+    "role": "student",
+    "full_name": "Student 10",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a11": {
+    "id": 302,
+    "username": "ece1a11",
+    "email": "student11@university.edu",
+    "password_hash": "68bc06b042a284b7a17486af305133b6:af39351050247f87fb29666936e5450d07dd7feda8bd768b47ae88f9afafce4b",
+    "role": "student",
+    "full_name": "Student 11",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a12": {
+    "id": 303,
+    "username": "ece1a12",
+    "email": "student12@university.edu",
+    "password_hash": "311a759711da322086878b7d8238cc90:57b489be2da948cfd6227351c03c36348b6ffbf7546392f9eacd3177f0ad7f6a",
+    "role": "student",
+    "full_name": "Student 12",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a13": {
+    "id": 304,
+    "username": "ece1a13",
+    "email": "student13@university.edu",
+    "password_hash": "42ab942706db638a358cfee5ee343f80:c926e74399efa1f1bd362e6ef96763c5e1be7dfc4f0cc060aa00d7c291b01f90",
+    "role": "student",
+    "full_name": "Student 13",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a14": {
+    "id": 305,
+    "username": "ece1a14",
+    "email": "student14@university.edu",
+    "password_hash": "8efb83569349197841165d974e752572:dc65152908c714141951a3354e5b36281c2d3483742b36312ff63cf940a980d4",
+    "role": "student",
+    "full_name": "Student 14",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a15": {
+    "id": 306,
+    "username": "ece1a15",
+    "email": "student15@university.edu",
+    "password_hash": "cbed0ab5423a9d888b22bf7ca67596de:713e36c52dd46930957134d4bec1e105e3addb297ac47ef04394da9a3cdd5e45",
+    "role": "student",
+    "full_name": "Student 15",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a16": {
+    "id": 307,
+    "username": "ece1a16",
+    "email": "student16@university.edu",
+    "password_hash": "595b35b3d0b8c8b78ed8bcd199585068:98c61b31459468452c3d0f0cfb08952e6c81a7f605bfc0e332f935ff35885ed5",
+    "role": "student",
+    "full_name": "Student 16",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a17": {
+    "id": 308,
+    "username": "ece1a17",
+    "email": "student17@university.edu",
+    "password_hash": "d952b1a7cc6a6463d8291afc16af73e5:f21da898eba0102bb9907a841775998a5c90359c2ea4a26a78dcc4f9f31cb21d",
+    "role": "student",
+    "full_name": "Student 17",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a18": {
+    "id": 309,
+    "username": "ece1a18",
+    "email": "student18@university.edu",
+    "password_hash": "018447c6104fe803fd73ee33d72e360b:c177008400960e01b5f676212eea03cfe0549d0e86d7eb4f7aa044c5d90f8cfc",
+    "role": "student",
+    "full_name": "Student 18",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a19": {
+    "id": 310,
+    "username": "ece1a19",
+    "email": "student19@university.edu",
+    "password_hash": "8c863fba503ceff7b9b3d1b9010f87bf:6e33247f1fd0d61eba35cb219ca09633f9f6e9d8cd53bc4d4f71b619acb089df",
+    "role": "student",
+    "full_name": "Student 19",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a20": {
+    "id": 311,
+    "username": "ece1a20",
+    "email": "student20@university.edu",
+    "password_hash": "59eb456a2a3ffe227d48252ce866b595:8a47827ac9bb46b1b16af016533998f7dcdcf97dc30864df2350d5dbac4e05b4",
+    "role": "student",
+    "full_name": "Student 20",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece2a01": {
+    "id": 312,
+    "username": "ece2a01",
+    "email": "student21@university.edu",
+    "password_hash": "3ee59b93d6e9058576622236b7d905d1:68300229025b7e9ea095feb580e9d76e0f36489c5ef35b41083c60979b0b1ac7",
+    "role": "student",
+    "full_name": "Student 21",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a02": {
+    "id": 313,
+    "username": "ece2a02",
+    "email": "student22@university.edu",
+    "password_hash": "b4c4cb1b14e7a48e3c9a6f85cba5387d:cea646c4850b7c7da5f2cb57552b7c32fc2486d78c6be25cfa974969ea57edea",
+    "role": "student",
+    "full_name": "Student 22",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a03": {
+    "id": 314,
+    "username": "ece2a03",
+    "email": "student23@university.edu",
+    "password_hash": "67cc3479eabb001a7311075670855ae3:22a6d9d4aea589d78fa7e7f037bade6045ab88fb1ab46160f00fd617ff2a7878",
+    "role": "student",
+    "full_name": "Student 23",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a04": {
+    "id": 315,
+    "username": "ece2a04",
+    "email": "student24@university.edu",
+    "password_hash": "a9dfa998fd9ed98e6cd8b3a7a502d769:80ead1af49c2054b7dea4d6ce49c7f8f7966333ffe3ca7ec7e45606a8a088de7",
+    "role": "student",
+    "full_name": "Student 24",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a05": {
+    "id": 316,
+    "username": "ece2a05",
+    "email": "student25@university.edu",
+    "password_hash": "a28dddd55a6511c9bcf03eea71844821:46f4b6c7fdc1c3735722f3d756129a177d09cb775715487ff07db5ea9413d3a6",
+    "role": "student",
+    "full_name": "Student 25",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a06": {
+    "id": 317,
+    "username": "ece2a06",
+    "email": "student26@university.edu",
+    "password_hash": "db69f9d87421681e451530aa27b4e260:92e68f508f87b895aa4505e953feec550bd7df4562ff4f918babfe50f4a309ba",
+    "role": "student",
+    "full_name": "Student 26",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a07": {
+    "id": 318,
+    "username": "ece2a07",
+    "email": "student27@university.edu",
+    "password_hash": "e8c0aeefb3e71235b60a94e6bbc997df:ca4689bc00bf691315961e507f360ef7786538362193b45ff643a456bb0de319",
+    "role": "student",
+    "full_name": "Student 27",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a08": {
+    "id": 319,
+    "username": "ece2a08",
+    "email": "student28@university.edu",
+    "password_hash": "5ffd8ef5e75a2e5e0942a15e7271f37d:0383c8ed2dec1345104dc751fce3116ead911d2312901f859b868521cb146749",
+    "role": "student",
+    "full_name": "Student 28",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a09": {
+    "id": 320,
+    "username": "ece2a09",
+    "email": "student29@university.edu",
+    "password_hash": "be5aef4fc0707fed9f4ccaa6f52c8f65:da61d585fb57b588441a3a4a5b6bd828d8bee163a17528fac119ffdab854112c",
+    "role": "student",
+    "full_name": "Student 29",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a10": {
+    "id": 321,
+    "username": "ece2a10",
+    "email": "student30@university.edu",
+    "password_hash": "e4e3735a93b48f29854fe1c5b34199c5:a1c0333f0d4bbbcfe4bd1435122627b1ccde7cb9f0b92654ae5b0e33535dd35c",
+    "role": "student",
+    "full_name": "Student 30",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a11": {
+    "id": 322,
+    "username": "ece2a11",
+    "email": "student31@university.edu",
+    "password_hash": "4094a37bd4baa10933ec078308f615bf:64e9bb471aab985968ee1b42a0c50874158ddf22699945b3b5bed4cc1c2c0ca7",
+    "role": "student",
+    "full_name": "Student 31",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a12": {
+    "id": 323,
+    "username": "ece2a12",
+    "email": "student32@university.edu",
+    "password_hash": "7574dd37fb97570e8c86ace9df145767:fb18a27d6a2bb5290dc6c8c7b3a9b7c19db8e59a7dafa05b951cd37510c33361",
+    "role": "student",
+    "full_name": "Student 32",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a13": {
+    "id": 324,
+    "username": "ece2a13",
+    "email": "student33@university.edu",
+    "password_hash": "11cee6899fe18554e98dbad11bb025ee:af8a561c1eb05777322812f37f39e46e94735509d8a31ee102eed4e445e14277",
+    "role": "student",
+    "full_name": "Student 33",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a14": {
+    "id": 325,
+    "username": "ece2a14",
+    "email": "student34@university.edu",
+    "password_hash": "ecbf610bf827d87e40b0b35c305ff12b:3e882646750637267783d65fba5be8f49d125d3b2365683f8cc265c4fd8e8166",
+    "role": "student",
+    "full_name": "Student 34",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a15": {
+    "id": 326,
+    "username": "ece2a15",
+    "email": "student35@university.edu",
+    "password_hash": "e0242724a8bec4da8fbf8c5de65a8f1d:d9a5168f86264fe0abd4f3f6880d1220c053d4f3a706b744e84b1280a93d78bf",
+    "role": "student",
+    "full_name": "Student 35",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a16": {
+    "id": 327,
+    "username": "ece2a16",
+    "email": "student36@university.edu",
+    "password_hash": "b7c59ffca537215515d38329b13901d7:6ebd4fa6ce0c2740e3f34201e31e111e84d26f2fdc6a01ffd34f0bfd4986eda4",
+    "role": "student",
+    "full_name": "Student 36",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a17": {
+    "id": 328,
+    "username": "ece2a17",
+    "email": "student37@university.edu",
+    "password_hash": "a3a9c430862ce9ab555c2734d037d47a:a6d8f4ffb49f7c27a5ca45a6479b152c572dffbd83f1c70e5ceab2e61dcc24c4",
+    "role": "student",
+    "full_name": "Student 37",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a18": {
+    "id": 329,
+    "username": "ece2a18",
+    "email": "student38@university.edu",
+    "password_hash": "b3f2cdcb2c6a2e7bee4817daaab1554e:a5fbc3195f53f2857af451bacc7e99beb448585e9eb677052adad2af8ab8d2d1",
+    "role": "student",
+    "full_name": "Student 38",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a19": {
+    "id": 330,
+    "username": "ece2a19",
+    "email": "student39@university.edu",
+    "password_hash": "e716e0a937464ca4462905b5b11f03a6:2404ea3b00b29878e5b562e2550c1b8aa7ebb0b4be847118ea2cbb955c5c2d1f",
+    "role": "student",
+    "full_name": "Student 39",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a20": {
+    "id": 331,
+    "username": "ece2a20",
+    "email": "student40@university.edu",
+    "password_hash": "129f52b0feeeed9b02ef48695bda2e25:53f96369771b99b4f0f016dd824e4816db182ade8329b17b767f1a0f7750c87c",
+    "role": "student",
+    "full_name": "Student 40",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece3a01": {
+    "id": 332,
+    "username": "ece3a01",
+    "email": "student41@university.edu",
+    "password_hash": "472234afe49f39c3a075245d22c676c8:02d05182221f8b83d7d0fcfefeb7199094c89454c3e2810331f7808981ab6d36",
+    "role": "student",
+    "full_name": "Student 41",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a02": {
+    "id": 333,
+    "username": "ece3a02",
+    "email": "student42@university.edu",
+    "password_hash": "72c245252c60881124fa0bad2d7285a2:c26cf5cdd8d1755f1cc884b08ab479076b2d87488a3f162147822699c5ed7061",
+    "role": "student",
+    "full_name": "Student 42",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a03": {
+    "id": 334,
+    "username": "ece3a03",
+    "email": "student43@university.edu",
+    "password_hash": "de196577c367293bf9ca1a2bc2268ec1:3ec1744d4edb5aae598118b9dcd2115ff79e35c54c750f8fb648b19d28883105",
+    "role": "student",
+    "full_name": "Student 43",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a04": {
+    "id": 335,
+    "username": "ece3a04",
+    "email": "student44@university.edu",
+    "password_hash": "6a83e5baf9e3666c5c757deba0177c64:49891e2b4f1466ff6e6105ed58f887153ae01ed06682eb8fbd96b0c50eb15734",
+    "role": "student",
+    "full_name": "Student 44",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a05": {
+    "id": 336,
+    "username": "ece3a05",
+    "email": "student45@university.edu",
+    "password_hash": "2b93b4020985fa15106de380c914de30:b5d2c092e7a63babd0e185bb08f90c2dc54b25d3b6bfd54af5da3f361f2b3bd5",
+    "role": "student",
+    "full_name": "Student 45",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a06": {
+    "id": 337,
+    "username": "ece3a06",
+    "email": "student46@university.edu",
+    "password_hash": "d02578edc7d7275b9479de92b0a7584d:6b5e64f054bf3994ca3f5752492de5231e1648751225391b5e02b59ba5b7ee75",
+    "role": "student",
+    "full_name": "Student 46",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a07": {
+    "id": 338,
+    "username": "ece3a07",
+    "email": "student47@university.edu",
+    "password_hash": "2021de6a90bb7fd49490c6013ee07343:5d55655cdf9352aa03bf5f459a3d6f105f61a4982910c86f1d6419e7add033b6",
+    "role": "student",
+    "full_name": "Student 47",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a08": {
+    "id": 339,
+    "username": "ece3a08",
+    "email": "student48@university.edu",
+    "password_hash": "8d67665b7d448599262ae0982d75b519:e39072893c0ebab3652a3ec01c3c2fc6c9e7ae85f0e4b5acd5c4f0ad2bb44aba",
+    "role": "student",
+    "full_name": "Student 48",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a09": {
+    "id": 340,
+    "username": "ece3a09",
+    "email": "student49@university.edu",
+    "password_hash": "13ad928f92aeed73190328662292d130:39ee62f4713066ace642b301ac6a84885beab56d3d86021f8d1f95bceb6039c2",
+    "role": "student",
+    "full_name": "Student 49",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a10": {
+    "id": 341,
+    "username": "ece3a10",
+    "email": "student50@university.edu",
+    "password_hash": "f07fc722a275e91916bbceaa1b64f5e3:59eee0863b34894b3b2990ba5875c6a081e344ea39ca56c14c42a8e9bc7d9dd5",
+    "role": "student",
+    "full_name": "Student 50",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a11": {
+    "id": 342,
+    "username": "ece3a11",
+    "email": "student51@university.edu",
+    "password_hash": "39394bda572ca523bc902b7f0df399aa:6c878afcae77b453affd39d874fe89b712d51e30515e8aeecce0889f0b34ece2",
+    "role": "student",
+    "full_name": "Student 51",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a12": {
+    "id": 343,
+    "username": "ece3a12",
+    "email": "student52@university.edu",
+    "password_hash": "d0fce48fc13ff64f264f0502424d9d2f:d421327a7f0665c85327e5171d0a688f4d3826c62a6d5331abb5abaa684708e2",
+    "role": "student",
+    "full_name": "Student 52",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a13": {
+    "id": 344,
+    "username": "ece3a13",
+    "email": "student53@university.edu",
+    "password_hash": "d9dcd5fc119112acb29835621ab6b617:cfbe703dec59a6790e37a790366aa2691f38afac6ccafe8052e81fbb0ccafd64",
+    "role": "student",
+    "full_name": "Student 53",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a14": {
+    "id": 345,
+    "username": "ece3a14",
+    "email": "student54@university.edu",
+    "password_hash": "dfcd5eea962c576deb355415fd805c04:9e3cc3383cfed1523fe01992e119d47e83a67b2379b5fc250359f782b9dc9e07",
+    "role": "student",
+    "full_name": "Student 54",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a15": {
+    "id": 346,
+    "username": "ece3a15",
+    "email": "student55@university.edu",
+    "password_hash": "821b0315ea1c59063ad2529fa3d42af7:240b37f3db46975a90e8ff62a2d11d2c4d9509b857658e91c13c597800d994f0",
+    "role": "student",
+    "full_name": "Student 55",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a16": {
+    "id": 347,
+    "username": "ece3a16",
+    "email": "student56@university.edu",
+    "password_hash": "2d30569adb2228fcf4ad339c5963e231:b31c337e10ab1277d86d083e53b150168b7aafaacda240c5ecce2f7967268c9f",
+    "role": "student",
+    "full_name": "Student 56",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a17": {
+    "id": 348,
+    "username": "ece3a17",
+    "email": "student57@university.edu",
+    "password_hash": "fa01324fdba1abbb2afeb265c2bde9cf:7117333696f99a19102c7eb56af247c1cc6efed3bf54a948252dba95401b9d25",
+    "role": "student",
+    "full_name": "Student 57",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a18": {
+    "id": 349,
+    "username": "ece3a18",
+    "email": "student58@university.edu",
+    "password_hash": "25c5da4d2b125b0379b27b716240dc84:83d8b966b6fdd6ca5eae4ddf899d4766a3b8a2d18e4942ee1613ab0ed9e695ef",
+    "role": "student",
+    "full_name": "Student 58",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a19": {
+    "id": 350,
+    "username": "ece3a19",
+    "email": "student59@university.edu",
+    "password_hash": "36b80307a601e61549c35d5bda6ca484:fb50932f4599e6d6b8a2d2d8499e71dadc2ca8726ee97f5f6397f85edaf40437",
+    "role": "student",
+    "full_name": "Student 59",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a20": {
+    "id": 351,
+    "username": "ece3a20",
+    "email": "student60@university.edu",
+    "password_hash": "4875aad44a8d832ed52a9e84fb491034:424ecc0f1ff3de4cf2d4f8c3d5e12f35258005b97f0062c8bedeb903480b09bf",
+    "role": "student",
+    "full_name": "Student 60",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece4a01": {
+    "id": 352,
+    "username": "ece4a01",
+    "email": "student61@university.edu",
+    "password_hash": "8fecced68c7dc8396adfb26c91314d5d:1358539d003810aae36771cfa7b9d346745b7fbc9d664cc92e9d29df4c10700c",
+    "role": "student",
+    "full_name": "Student 61",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a02": {
+    "id": 353,
+    "username": "ece4a02",
+    "email": "student62@university.edu",
+    "password_hash": "e005451a7b19c1bf01a797d48835c2b4:3266d0cd65d6478ff90942528bba795135d6bbb8fc0b0ce04f6aca1bc35da1c8",
+    "role": "student",
+    "full_name": "Student 62",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a03": {
+    "id": 354,
+    "username": "ece4a03",
+    "email": "student63@university.edu",
+    "password_hash": "e2fc2de66c2ad9baf2ba4248f23d9bc6:71d9094e4113672d2ed784b5d3d6377f558c49d55ab9fed503a59c621a7e3d09",
+    "role": "student",
+    "full_name": "Student 63",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a04": {
+    "id": 355,
+    "username": "ece4a04",
+    "email": "student64@university.edu",
+    "password_hash": "7f900334eb2cfc9109326a47c31c6c05:a2d3d4d95250d5362fbe730764bd8826404367880d843283d1d6dc7bb0d13d7a",
+    "role": "student",
+    "full_name": "Student 64",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a05": {
+    "id": 356,
+    "username": "ece4a05",
+    "email": "student65@university.edu",
+    "password_hash": "5b99776846aff2470974cfa85e347ef4:936028d628d224aa5cb4e9fad9b3f38a4dc491a80b580ccc9317fa06eec1bccf",
+    "role": "student",
+    "full_name": "Student 65",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a06": {
+    "id": 357,
+    "username": "ece4a06",
+    "email": "student66@university.edu",
+    "password_hash": "cdd7fdfdaf61fb0df519306d54a60c84:9c604fbfbef4ff216ba26b778cd9f1783f5d61b0352b09bf72364e168b2c1682",
+    "role": "student",
+    "full_name": "Student 66",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a07": {
+    "id": 358,
+    "username": "ece4a07",
+    "email": "student67@university.edu",
+    "password_hash": "7976c384a20d3c54fa35b849d5f35705:32c123e7f62ed11c15ac8c5a50d2b5b880d94d6061dc5dd07fbedad65c6f96f9",
+    "role": "student",
+    "full_name": "Student 67",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a08": {
+    "id": 359,
+    "username": "ece4a08",
+    "email": "student68@university.edu",
+    "password_hash": "583802f8c48717b1b77734282292ad53:6b877344e33a8d20f5b9591a82537877e63e660a0aafc5175d9872c0f545336b",
+    "role": "student",
+    "full_name": "Student 68",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a09": {
+    "id": 360,
+    "username": "ece4a09",
+    "email": "student69@university.edu",
+    "password_hash": "327c0ccbcdebf56f2f39106720108935:aa2070f359d9f982a9ad86943956f2fbe7b22ef41d0e3b750758fd3c85d42822",
+    "role": "student",
+    "full_name": "Student 69",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a10": {
+    "id": 361,
+    "username": "ece4a10",
+    "email": "student70@university.edu",
+    "password_hash": "8529ad5ce6c9d2755f77e6b336e530d8:165f315f8a0a8d870ad119b6ab78056d6a15590d5615239c2c1c95a1e64a8eb8",
+    "role": "student",
+    "full_name": "Student 70",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a11": {
+    "id": 362,
+    "username": "ece4a11",
+    "email": "student71@university.edu",
+    "password_hash": "b578db51777c58ec7c4aec99dbcd02fc:bc4aa0abcb21b86938ffcd19871753008e78d7d9e88eab66879d6e79afbb7aab",
+    "role": "student",
+    "full_name": "Student 71",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a12": {
+    "id": 363,
+    "username": "ece4a12",
+    "email": "student72@university.edu",
+    "password_hash": "4df5a098a59152297037554cecded44b:4ab15a59bc1825b7479ec07abf59a4f392544e8cc3736fdba417e36487fd6988",
+    "role": "student",
+    "full_name": "Student 72",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a13": {
+    "id": 364,
+    "username": "ece4a13",
+    "email": "student73@university.edu",
+    "password_hash": "72583634b084844d26ee55720f069eb2:00f5f678e0402ee24c90a821dddda5c4cca074e30434044fbb09ce2470e75a66",
+    "role": "student",
+    "full_name": "Student 73",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a14": {
+    "id": 365,
+    "username": "ece4a14",
+    "email": "student74@university.edu",
+    "password_hash": "fd33da9e6f967aeef17f7f7e0581126b:20b54d8fe26d0f70694c8337ae0f5a78de570ca1998346ca4318d5596375d9da",
+    "role": "student",
+    "full_name": "Student 74",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a15": {
+    "id": 366,
+    "username": "ece4a15",
+    "email": "student75@university.edu",
+    "password_hash": "a5d38ee5011e4bd65179fc5296c3f513:3ef31383c8df34989f658a58ef0ba5958bbdad31351ec5e4ac49efc03f3d97e1",
+    "role": "student",
+    "full_name": "Student 75",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a16": {
+    "id": 367,
+    "username": "ece4a16",
+    "email": "student76@university.edu",
+    "password_hash": "9abed10fa30ec9403907776ff61b26c4:2ecd2e561d16bcee69c94ca8f4ae04fa0b854d334e80950c32c3a589842bc14d",
+    "role": "student",
+    "full_name": "Student 76",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a17": {
+    "id": 368,
+    "username": "ece4a17",
+    "email": "student77@university.edu",
+    "password_hash": "d8bb20e3bb6d81a0d85945ec9391b979:70226c43274261263498675f8af31b821d4fbd84eadd1bdd367e21a1caefa062",
+    "role": "student",
+    "full_name": "Student 77",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a18": {
+    "id": 369,
+    "username": "ece4a18",
+    "email": "student78@university.edu",
+    "password_hash": "e3c4fc8acaca7ee7f93fc6f862b952bd:ca2a1ce33047afa83d547ba725f0378302a106c168bb8d4263b1d3e10510fcda",
+    "role": "student",
+    "full_name": "Student 78",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a19": {
+    "id": 370,
+    "username": "ece4a19",
+    "email": "student79@university.edu",
+    "password_hash": "89411f8b423616d638f3573fc98deb61:9f1c67c082723f18e86754857ce297c67e03a7e43494c36529f398e138086cbd",
+    "role": "student",
+    "full_name": "Student 79",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a20": {
+    "id": 371,
+    "username": "ece4a20",
+    "email": "student80@university.edu",
+    "password_hash": "7fe813199fe1eb511d7ea3b3be2738a6:fd7d6a8e07d3af82e81a5521e3ef48c238925ac56f69c4238c1658779322c45e",
+    "role": "student",
+    "full_name": "Student 80",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece1a21": {
+    "id": 372,
+    "username": "ece1a21",
+    "email": "student21@university.edu",
+    "password_hash": "d34fa21c251d6a6e21cf42def1bdfcf5:f7957d480327242b0d3acb00a4fcddde562b3acec246f8f59674ae462ac7d04a",
+    "role": "student",
+    "full_name": "Student 21",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a22": {
+    "id": 373,
+    "username": "ece1a22",
+    "email": "student22@university.edu",
+    "password_hash": "f51d9850b95bf043d707979039372778:e8cc3687c762bc7df156f539212baa33296481b59463e12230278f62091993d5",
+    "role": "student",
+    "full_name": "Student 22",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a23": {
+    "id": 374,
+    "username": "ece1a23",
+    "email": "student23@university.edu",
+    "password_hash": "074c83b3f1eee88d9a198cb38088cfd0:b1d0af83678f3170df150dab7d7e197029cb627d5001344783b9d166639204e9",
+    "role": "student",
+    "full_name": "Student 23",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a24": {
+    "id": 375,
+    "username": "ece1a24",
+    "email": "student24@university.edu",
+    "password_hash": "d9d441be6a140f34474759a6c62a3ee8:6a5afb75defa963298a1db0881628368c6e6553a989b8c1d92a2360c0b572513",
+    "role": "student",
+    "full_name": "Student 24",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a25": {
+    "id": 376,
+    "username": "ece1a25",
+    "email": "student25@university.edu",
+    "password_hash": "0c94ba0689944bdaecd05b9f161824b5:68b6272b549a5154c379e721051b614882cecbc7b5e582953529f17bd4b30bc0",
+    "role": "student",
+    "full_name": "Student 25",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a26": {
+    "id": 377,
+    "username": "ece1a26",
+    "email": "student26@university.edu",
+    "password_hash": "c86dde4b552aec0dfe501af001bc0e7e:66592c841e1f1b447d553a5f33216656edb1290d0b299288f21017bfda0a6d07",
+    "role": "student",
+    "full_name": "Student 26",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a27": {
+    "id": 378,
+    "username": "ece1a27",
+    "email": "student27@university.edu",
+    "password_hash": "dbc0aaeb689b7579dbe6f4f9aa08b7f8:7d85cd752a92905504b1a0b8708ba17ea5c65086510c9340565aeed3c47eb16f",
+    "role": "student",
+    "full_name": "Student 27",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a28": {
+    "id": 379,
+    "username": "ece1a28",
+    "email": "student28@university.edu",
+    "password_hash": "faa96a31bf3f2e310787a870e2db35e1:8ac02dab35a7127533aff9032867e8881fe8643ff76f4fa9e0613a301c0ec403",
+    "role": "student",
+    "full_name": "Student 28",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a29": {
+    "id": 380,
+    "username": "ece1a29",
+    "email": "student29@university.edu",
+    "password_hash": "cf93f281ed1aa17f525637ed56d1e67b:588119ef20467ed0038c51d7cb3684ab8e982042f18f670f417af6d1076946e7",
+    "role": "student",
+    "full_name": "Student 29",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece1a30": {
+    "id": 381,
+    "username": "ece1a30",
+    "email": "student30@university.edu",
+    "password_hash": "c302ed82162bbbab95cc298f144f56b1:8b34d319f6c6d8eb2805caa0631e5818887c765ddc73227ecc382be6be4fea06",
+    "role": "student",
+    "full_name": "Student 30",
+    "department": "ECE",
+    "year": 1,
+    "section": "A"
+  },
+  "ece2a21": {
+    "id": 382,
+    "username": "ece2a21",
+    "email": "student51@university.edu",
+    "password_hash": "a209ff1e0704118eec5b3248e987bfb4:a28a63925829008500e4546fae0326875a1a2b49c45cc85547618b28e73ea5e9",
+    "role": "student",
+    "full_name": "Student 51",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a22": {
+    "id": 383,
+    "username": "ece2a22",
+    "email": "student52@university.edu",
+    "password_hash": "cd57992d00581ec7b22a8702365ede98:7ea9426b05ac1d0977c236f1fa9b674cd69e38c201647f060a4b08b6a32657dc",
+    "role": "student",
+    "full_name": "Student 52",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a23": {
+    "id": 384,
+    "username": "ece2a23",
+    "email": "student53@university.edu",
+    "password_hash": "df003e52220479970938b009896416b1:9a9a0da11ea7d98cf1a09b16826e928afaa9af7f0a49c5447745c12ccbf550ee",
+    "role": "student",
+    "full_name": "Student 53",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a24": {
+    "id": 385,
+    "username": "ece2a24",
+    "email": "student54@university.edu",
+    "password_hash": "3a2a0327b6508df549e08f2dace22ee3:a5837f7def17ec097d66a5b7b2791e4863f34674a9fd986fc5810afbc8c2c9ab",
+    "role": "student",
+    "full_name": "Student 54",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a25": {
+    "id": 386,
+    "username": "ece2a25",
+    "email": "student55@university.edu",
+    "password_hash": "142d0ed0a095a05ec2dee0e3f6145e54:5720994031763f6f6852d3f6b9f43fb030ab2cc09508f8398e5901b311ff25b4",
+    "role": "student",
+    "full_name": "Student 55",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a26": {
+    "id": 387,
+    "username": "ece2a26",
+    "email": "student56@university.edu",
+    "password_hash": "a4d9bcad5228346ef180a2cd48c1dcb2:b3766547007a7a87c2b8aa59a532d7cb1f719174688fa1c0fd3c282822d40f3b",
+    "role": "student",
+    "full_name": "Student 56",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a27": {
+    "id": 388,
+    "username": "ece2a27",
+    "email": "student57@university.edu",
+    "password_hash": "8ee89e6430247ba53b5459978927398d:959ceb0174b377ad5bce29d5ef3335b269835918a0f97bcd149ce2b138328c37",
+    "role": "student",
+    "full_name": "Student 57",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a28": {
+    "id": 389,
+    "username": "ece2a28",
+    "email": "student58@university.edu",
+    "password_hash": "728ff83eedf12e53e16d0f4f6a5358ff:4eed0291a179d3900be3b386a7709f1e75973d1f87e41f23f9a1cc2b01067524",
+    "role": "student",
+    "full_name": "Student 58",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a29": {
+    "id": 390,
+    "username": "ece2a29",
+    "email": "student59@university.edu",
+    "password_hash": "19367be38bafbaf23185ba5d23251248:e6c75da4fd6362ece4572291d06c0b979cfa612947ebf85db053a5a76fd2a162",
+    "role": "student",
+    "full_name": "Student 59",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece2a30": {
+    "id": 391,
+    "username": "ece2a30",
+    "email": "student60@university.edu",
+    "password_hash": "3bfb45ba71214a4b7d4212b5320e5967:a59822119edb823986b497b5b3da7cfc80070e8869124648e6a9625809b89586",
+    "role": "student",
+    "full_name": "Student 60",
+    "department": "ECE",
+    "year": 2,
+    "section": "A"
+  },
+  "ece3a21": {
+    "id": 392,
+    "username": "ece3a21",
+    "email": "student81@university.edu",
+    "password_hash": "e5a7fe2c57bcf638c9bb4755346e5e64:1bcb84358980c99120362fdba2490e1fb7d531612f211b7e2ee899dc5aeee9d2",
+    "role": "student",
+    "full_name": "Student 81",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a22": {
+    "id": 393,
+    "username": "ece3a22",
+    "email": "student82@university.edu",
+    "password_hash": "00cd50c76e696cfe2c7b3c7807c479b8:3ebbcd2c2db81a072569422e05a7603e31014533fa8bcf1bcf0c53d222de1e36",
+    "role": "student",
+    "full_name": "Student 82",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a23": {
+    "id": 394,
+    "username": "ece3a23",
+    "email": "student83@university.edu",
+    "password_hash": "2ee0fa503d7e86059a4e301488a15cbe:752220ebc72e1a083e7b6e01a48e3494d3ec83845db99adcd6fa74a4444df970",
+    "role": "student",
+    "full_name": "Student 83",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a24": {
+    "id": 395,
+    "username": "ece3a24",
+    "email": "student84@university.edu",
+    "password_hash": "74a5f428210eb84058b730abc4fc422b:e5f9e95a796af3e835082fd4efca854288b600efe62fc604b0a783dbb23b3054",
+    "role": "student",
+    "full_name": "Student 84",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a25": {
+    "id": 396,
+    "username": "ece3a25",
+    "email": "student85@university.edu",
+    "password_hash": "5b8c455b87fb8001439ea6d433a792eb:8a9520a2c7fd913456b25ee915cf8fe979e576f722928fa59b213503d302b3cd",
+    "role": "student",
+    "full_name": "Student 85",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a26": {
+    "id": 397,
+    "username": "ece3a26",
+    "email": "student86@university.edu",
+    "password_hash": "301e8c976b1b3426fab260900800badd:d1e705553ce53f18f2962b9b2e3a687e9ad15f6d9755481f046d2c12fb4173a9",
+    "role": "student",
+    "full_name": "Student 86",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a27": {
+    "id": 398,
+    "username": "ece3a27",
+    "email": "student87@university.edu",
+    "password_hash": "d89ae298b7531e882f606f136c4a1274:3e8c8d769fcd3534f005ab6346e9817d621abea278cf8a921d47fad248ac4a68",
+    "role": "student",
+    "full_name": "Student 87",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a28": {
+    "id": 399,
+    "username": "ece3a28",
+    "email": "student88@university.edu",
+    "password_hash": "363793ccf87374fd225fca0d1d091498:c551497eedf4b9ae0c058d0d68fa3ff4f55d13747eca53bce8a3a40637eff98c",
+    "role": "student",
+    "full_name": "Student 88",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a29": {
+    "id": 400,
+    "username": "ece3a29",
+    "email": "student89@university.edu",
+    "password_hash": "71730616907dbbd370e45cd46b6537fd:95bf4d86a4512bebc0ee4070aa0f1a25de61fe5f08dcc0d9ca457a23e05a10ac",
+    "role": "student",
+    "full_name": "Student 89",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece3a30": {
+    "id": 401,
+    "username": "ece3a30",
+    "email": "student90@university.edu",
+    "password_hash": "eb2f1cf7efae545b81e3b6b5670896b8:2cec47ef89f90543513342699764f943fa0020342efde93990bfe491d1225bc0",
+    "role": "student",
+    "full_name": "Student 90",
+    "department": "ECE",
+    "year": 3,
+    "section": "A"
+  },
+  "ece4a21": {
+    "id": 402,
+    "username": "ece4a21",
+    "email": "student111@university.edu",
+    "password_hash": "2acfe95b3fb5650b2e95569c5126bdf6:4f767a3572c8dca9e12f457d73e282b20f24c2b00b0e36a13353d241ce52216f",
+    "role": "student",
+    "full_name": "Student 111",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a22": {
+    "id": 403,
+    "username": "ece4a22",
+    "email": "student112@university.edu",
+    "password_hash": "a324a238e611a5362b6a4aae2a64077a:7f8fb133a3e87b520a149b7da6858e68c5b79cafc0b98420c0fcbadab01d2dee",
+    "role": "student",
+    "full_name": "Student 112",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a23": {
+    "id": 404,
+    "username": "ece4a23",
+    "email": "student113@university.edu",
+    "password_hash": "9144552a651a3c659d8c7b2514ba32f4:b1c42e111e7fa55db1b3b34650a317ea6f9eaa3c51c5679a4def2a70706ba040",
+    "role": "student",
+    "full_name": "Student 113",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a24": {
+    "id": 405,
+    "username": "ece4a24",
+    "email": "student114@university.edu",
+    "password_hash": "8d131f13de8e44d34b35b8fc928d62f4:0bd9834affbdc56273b1be749a264b3ffab26af0f9935396067f7c4e10c1d46a",
+    "role": "student",
+    "full_name": "Student 114",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a25": {
+    "id": 406,
+    "username": "ece4a25",
+    "email": "student115@university.edu",
+    "password_hash": "7526510452133833e38428161176f4f7:cab288ca2ad4842383628b51656c932cc70cd01b62235ff12024c4be2848816e",
+    "role": "student",
+    "full_name": "Student 115",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a26": {
+    "id": 407,
+    "username": "ece4a26",
+    "email": "student116@university.edu",
+    "password_hash": "4718ecc3a833c5dbcd321fcf7b322d79:f90384d0ec38b0bc6214e9bf7512241ae3c71cc91f933f45eb9f70f04dc0618b",
+    "role": "student",
+    "full_name": "Student 116",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a27": {
+    "id": 408,
+    "username": "ece4a27",
+    "email": "student117@university.edu",
+    "password_hash": "dca79adfc453433240aa2fc5771c9c33:86e394ad952d44ec35fa4d579b662ebca911316e7019e2e12e11ff55fe52abe0",
+    "role": "student",
+    "full_name": "Student 117",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a28": {
+    "id": 409,
+    "username": "ece4a28",
+    "email": "student118@university.edu",
+    "password_hash": "f2f5bd5734411f91563bb6af6acb330b:f66406c3d8a252f8b4e3f592aa1d321c47320102a3cb32ab2bcfb74b3f88facc",
+    "role": "student",
+    "full_name": "Student 118",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a29": {
+    "id": 410,
+    "username": "ece4a29",
+    "email": "student119@university.edu",
+    "password_hash": "3ea3b615f9a45ecc37c45b604c8083e5:381522734473809e41db6391d12b523b6f8ca25e8b856b6dc603a31b7ad3cdeb",
+    "role": "student",
+    "full_name": "Student 119",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  },
+  "ece4a30": {
+    "id": 411,
+    "username": "ece4a30",
+    "email": "student120@university.edu",
+    "password_hash": "0e30d7f25d3263ec828f903d814a4ffb:fc5a34169639d5f4d31b6387436a2f362a8d0afc6b19240322846dba922fef04",
+    "role": "student",
+    "full_name": "Student 120",
+    "department": "ECE",
+    "year": 4,
+    "section": "A"
+  }
+}

@@ -59,6 +59,7 @@ class Room(Base):
 	room_name = Column(String(50), nullable=False)
 	capacity = Column(Integer, nullable=True)
 	room_type = Column(String(50), nullable=True)  # LAB, CLASSROOM
+	assigned_batch_id = Column(Integer, nullable=True)  # Room assignment to batch (removed FK for now)
 
 
 class SubjectOffering(Base):

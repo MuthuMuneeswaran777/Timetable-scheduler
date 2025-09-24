@@ -42,8 +42,9 @@ const CONFIG = {
 			{ key: "room_name", label: "Name" },
 			{ key: "capacity", label: "Capacity" },
 			{ key: "room_type", label: "Type" },
+			{ key: "assigned_batch_id", label: "Batch" },
 		],
-		defaults: { room_name: "", capacity: 30, room_type: "CLASSROOM" },
+		defaults: { room_name: "", capacity: 30, room_type: "CLASSROOM", assigned_batch_id: "" },
 	},
 };
 
@@ -63,17 +64,15 @@ export default function DataManager({ entity = "batches" }) {
 		setLoading(true);
 		Promise.all([
 			DataAPI.list(entity),
-			entity === "subjects" ? DataAPI.list("teachers") : Promise.resolve([]),
-			entity === "subject_offerings" ? Promise.all([DataAPI.list("teachers"), DataAPI.list("subjects"), DataAPI.list("batches")]) : Promise.resolve([[], [], []]),
+			(entity === "subjects" || entity === "subject_offerings") ? DataAPI.list("teachers") : Promise.resolve([]),
+			(entity === "subject_offerings" || entity === "rooms") ? DataAPI.list("subjects") : Promise.resolve([]),
+			(entity === "subject_offerings" || entity === "rooms") ? DataAPI.list("batches") : Promise.resolve([]),
 		])
-			.then(([itemsRes, teachersRes, extrasRes]) => {
+			.then(([itemsRes, teachersRes, subjectsRes, batchesRes]) => {
 				setItems(itemsRes);
 				setTeachers(teachersRes);
-				if (entity === "subject_offerings") {
-					setTeachers(extrasRes[0]);
-					setSubjects(extrasRes[1]);
-					setBatches(extrasRes[2]);
-				}
+				setSubjects(subjectsRes);
+				setBatches(batchesRes);
 			})
 			.finally(() => setLoading(false));
 		setForm(cfg.defaults);
@@ -97,6 +96,9 @@ export default function DataManager({ entity = "batches" }) {
 
 	function validate() {
 		for (const [k, v] of Object.entries(form)) {
+			if (entity === "batches" && k === "batch_name" && String(v).trim() === "") {
+				return "batch_name is required";
+			}
 			if (typeof v === "string" && k.includes("name") && v.trim() === "") {
 				return `${k} is required`;
 			}
@@ -131,6 +133,18 @@ export default function DataManager({ entity = "batches" }) {
 		}
 	}
 
+	function renderCell(it, c) {
+		if (entity === "subject_offerings") {
+			if (c.key === "subject_id") return subjects.find((s) => s.subject_id === it.subject_id)?.subject_name || it.subject_id;
+			if (c.key === "teacher_id") return teachers.find((t) => t.teacher_id === it.teacher_id)?.teacher_name || it.teacher_id;
+			if (c.key === "batch_id") return batches.find((b) => b.batch_id === it.batch_id)?.batch_name || it.batch_id;
+		}
+		if (entity === "rooms" && c.key === "assigned_batch_id") {
+			return it.assigned_batch_id ? (batches.find((b) => b.batch_id === it.assigned_batch_id)?.batch_name || it.assigned_batch_id) : "Unassigned";
+		}
+		return String(it[c.key] ?? "");
+	}
+
 	return (
 		<div className="space-y-6">
 			<div>
@@ -155,7 +169,7 @@ export default function DataManager({ entity = "batches" }) {
 						) : items.map((it) => (
 							<tr key={it[idKey()]} className="border-t">
 								{cfg.columns.map((c) => (
-									<td key={c.key} className="px-4 py-3">{String(it[c.key] ?? "")}</td>
+									<td key={c.key} className="px-4 py-3">{renderCell(it, c)}</td>
 								))}
 								<td className="px-4 py-3">
 									<div className="flex gap-2">
@@ -202,6 +216,13 @@ export default function DataManager({ entity = "batches" }) {
 						) : entity === "subject_offerings" && k === "batch_id" ? (
 							<select className="mt-1 w-full rounded-md border px-3 py-2" value={String(form[k] ?? "")} onChange={(e) => onChange(k, e.target.value === "" ? "" : Number(e.target.value))}>
 								<option value="">Select batch</option>
+								{batches.map((b) => (
+									<option key={b.batch_id} value={b.batch_id}>{b.batch_name}</option>
+								))}
+							</select>
+						) : entity === "rooms" && k === "assigned_batch_id" ? (
+							<select className="mt-1 w-full rounded-md border px-3 py-2" value={String(form[k] ?? "")} onChange={(e) => onChange(k, e.target.value === "" ? "" : Number(e.target.value))}>
+								<option value="">Unassigned</option>
 								{batches.map((b) => (
 									<option key={b.batch_id} value={b.batch_id}>{b.batch_name}</option>
 								))}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Delete Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+        button { margin: 5px; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; }
+        .delete-btn { background-color: #dc3545; color: white; }
+        .create-btn { background-color: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Frontend Delete Operation Test</h1>
+    <div id="results"></div>
+    
+    <div>
+        <button class="create-btn" onclick="testDeleteOperation('teachers')">Test Teachers Delete</button>
+        <button class="create-btn" onclick="testDeleteOperation('subjects')">Test Subjects Delete</button>
+        <button class="create-btn" onclick="testDeleteOperation('batches')">Test Batches Delete</button>
+        <button class="create-btn" onclick="testDeleteOperation('rooms')">Test Rooms Delete</button>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        
+        const testData = {
+            teachers: {
+                teacher_name: 'Frontend Test Teacher',
+                email: 'frontend.test@example.com',
+                max_sessions_per_day: 2,
+                max_sessions_per_week: 10
+            },
+            subjects: {
+                subject_name: 'Frontend Test Subject',
+                teacher_id: 1,
+                sessions_per_week: 2,
+                is_lab: false
+            },
+            batches: {
+                batch_name: 'Frontend Test Batch',
+                department: 'Test Department',
+                sem: '1',
+                academic_year: '2024-25'
+            },
+            rooms: {
+                room_name: 'Frontend Test Room',
+                capacity: 30,
+                room_type: 'CLASSROOM',
+                assigned_batch_id: null
+            }
+        };
+        
+        const idFields = {
+            teachers: 'teacher_id',
+            subjects: 'subject_id',
+            batches: 'batch_id',
+            rooms: 'room_id'
+        };
+        
+        function addResult(message, type = 'info') {
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${type}`;
+            resultDiv.innerHTML = message;
+            resultsDiv.appendChild(resultDiv);
+            resultsDiv.scrollTop = resultsDiv.scrollHeight;
+        }
+        
+        async function testDeleteOperation(entity) {
+            addResult(`🧪 Testing ${entity} delete operation...`, 'info');
+            
+            try {
+                // Step 1: Create test record
+                const createResponse = await fetch(`${API_BASE}/data/${entity}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testData[entity])
+                });
+                
+                if (!createResponse.ok) {
+                    throw new Error(`Failed to create: ${createResponse.status}`);
+                }
+                
+                const createdItem = await createResponse.json();
+                const itemId = createdItem[idFields[entity]];
+                addResult(`✅ Created test ${entity} with ID: ${itemId}`, 'success');
+                
+                // Step 2: Delete the record
+                const deleteResponse = await fetch(`${API_BASE}/data/${entity}/${itemId}`, {
+                    method: 'DELETE'
+                });
+                
+                if (!deleteResponse.ok) {
+                    throw new Error(`Delete failed: ${deleteResponse.status} - ${await deleteResponse.text()}`);
+                }
+                
+                const deleteResult = await deleteResponse.json();
+                addResult(`✅ Delete API call successful: ${JSON.stringify(deleteResult)}`, 'success');
+                
+                // Step 3: Verify deletion
+                const verifyResponse = await fetch(`${API_BASE}/data/${entity}`);
+                if (verifyResponse.ok) {
+                    const allItems = await verifyResponse.json();
+                    const itemExists = allItems.some(item => item[idFields[entity]] === itemId);
+                    
+                    if (!itemExists) {
+                        addResult(`🎉 ${entity} DELETE OPERATION FULLY SUCCESSFUL!`, 'success');
+                    } else {
+                        addResult(`❌ ${entity} still exists after delete`, 'error');
+                    }
+                } else {
+                    addResult(`❌ Could not verify ${entity} deletion`, 'error');
+                }
+                
+            } catch (error) {
+                addResult(`❌ ${entity} delete test failed: ${error.message}`, 'error');
+            }
+        }
+        
+        // Auto-test all entities on page load
+        window.onload = async () => {
+            addResult('🚀 Starting automated delete tests...', 'info');
+            const entities = ['teachers', 'subjects', 'batches', 'rooms'];
+            
+            for (const entity of entities) {
+                await testDeleteOperation(entity);
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Wait 1 second between tests
+            }
+            
+            addResult('🏁 All delete tests completed!', 'info');
+        };
+    </script>
+</body>
+</html>
